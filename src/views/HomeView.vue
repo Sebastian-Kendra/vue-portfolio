@@ -31,7 +31,8 @@ export default {
     const footer = ref()
 
     onMounted(() => {
-      window.addEventListener('scroll', handleScroll, { once: true })
+      /* window.addEventListener('scroll', handleScroll, { once: true }) */
+      state.isActive = true
     })
 
     const handleScroll = () => {
