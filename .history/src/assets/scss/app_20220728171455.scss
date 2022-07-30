@@ -1,0 +1,24 @@
+@import 'animate.css';
+
+$nav-color: #222222;
+$hover-nav-color: #1878a5;
+
+// ------ NAVIGATION ------ //
+
+// ------ FONTS ------ //
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@200;500&display=swap');
+
+html {
+    font-size: 90%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+input,
+textarea {
+    font-family: 'Montserrat';
+}
+

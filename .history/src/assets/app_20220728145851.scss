@@ -1,0 +1,21 @@
+@import 'animate.css';
+
+// ------ FONTS ------
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+html {
+    font-size: 62%;
+}
+
+body {
+    font:{
+        family: 'Montserrat';
+        weight: 300;
+        line-height: 1.4;
+    } 
+}
+
+input,
+textarea {
+    font-family: 'Montserrat';
+}

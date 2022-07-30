@@ -1,0 +1,33 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-header {
+    position: relative;
+    top: 10px;
+    width: 50px;
+}
+
+.hero {
+    margin: 35px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+        margin-top: 0;
+    }
+
+    .wrapper-btn {
+        margin-top: 3.125em;
+    }
+}

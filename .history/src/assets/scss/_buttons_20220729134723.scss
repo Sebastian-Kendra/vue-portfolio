@@ -1,0 +1,147 @@
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    font-size: .7em;
+    margin: 1.85em 0 0 0;
+    padding: 0.125rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    border-color: 0;
+    border-radius: 0.35rem;
+    -webkit-border-radius: 0.35rem;
+    -moz-border-radius: 0.35rem;
+    -ms-border-radius: 0.35rem;
+    -o-border-radius: 0.35rem;
+}
+
+.primary-btn {
+    background-image: -webkit-gradient(linear, left top, right top, from(#314755), color-stop(51%, #26a0da), to(#314755));
+    background-image: -o-linear-gradient(left, #314755 0%, #26a0da 51%, #314755 100%);
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)
+}
+
+.primary-btn {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: #f8f8f8;
+}
+
+.primary-btn:focus,
+.primary-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.second-btn {
+    background: rgba(245, 245, 245, 0.219);
+    font-size: .7em;
+    margin: 1.85em 0 0 0;
+    padding: 0.125rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #000000;
+    -webkit-box-shadow: 0 0 20px #eee;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 0.35rem;
+    display: inline-block;
+    border-color: #26a0da;
+    -webkit-border-radius: 0.35rem;
+    -moz-border-radius: 0.35rem;
+    -ms-border-radius: 0.35rem;
+    -o-border-radius: 0.35rem;
+}
+
+.second-btn:hover,
+.second-btn:focus {
+    background-image: -webkit-gradient(linear, left top, right top, from(#314755), color-stop(51%, #26a0da), to(#314755));
+    background-image: -o-linear-gradient(left, #314755 0%, #26a0da 51%, #314755 100%);
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    /* background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+/* CARD BUTT */
+.btn-card {
+    -webkit-clip-path: polygon(89% 0, 100% 0%, 100% 100%, 68% 100%);
+    clip-path: polygon(89% 0, 100% 0%, 100% 100%, 68% 100%);
+    background-color: rgba(0, 0, 0, 0.678);
+    color: rgba(255, 255, 255, 0.986);
+    content: 'Prejdi na stranku';
+    position: absolute;
+    font-size: 1em;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    text-transform: uppercase;
+    z-index: 60;
+    border-radius: 2px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* TINY BUTTS */
+.btn-roll {
+    background-color: rgba(0, 0, 0, 0.582);
+    color: rgba(255, 255, 255, 0.986);
+    content: 'Prejdi na stranku';
+    position: absolute;
+    font-size: 3em;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 60;
+    border-radius: 2px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-roll p {
+    text-shadow: 1px 5px 5px #1a1b1b;
+}
+
+.btn-roll p:hover {
+    font-size: 1.1em;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
