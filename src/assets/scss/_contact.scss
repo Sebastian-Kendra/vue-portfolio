@@ -1,0 +1,37 @@
+.contact-form {
+	max-width: 35em;
+	margin: 4.5em auto 0;
+	text-align: left;
+
+	label {
+		font-size: 1.0625em;
+		display: block;
+		margin-bottom: 1.375em;
+	}
+
+	.btn {
+		margin: 0;
+	}
+}
+
+input,
+textarea {
+	color: $page-color;
+
+	border: 2px solid $page-color;
+	background-color: $bg-header;
+	outline: none;
+
+	padding: 0.625em;
+	margin-top: 0.375em;
+
+	display: block;
+	max-width: 100%;
+	width: 100%;
+
+	border-radius: $border-radius;
+
+	&:focus {
+		border-color: $hover-nav-color;
+	}
+}
