@@ -81,7 +81,7 @@ export default {
 
 <style>
 .wrapper-logo-svg {
-  width: 45%;
+  width: 46.5em;
   height: auto;
   margin: 0.625em;
   padding: 0.625em;
@@ -89,7 +89,6 @@ export default {
 
 .logo-svg {
   position: relative;
-  left: 1.875em;
   z-index: 1;
   width: 100%;
   height: auto;
