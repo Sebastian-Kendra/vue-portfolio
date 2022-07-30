@@ -2,6 +2,7 @@ header {
     position: relative;
     background-color: $bg-header;
     text-transform: uppercase;
+    overflow: hidden;
     z-index: 1000;
 }
 

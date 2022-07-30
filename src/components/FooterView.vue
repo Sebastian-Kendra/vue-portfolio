@@ -3,8 +3,8 @@
     <div class="footer-left">
       <img src="img/Logo-sk.png" alt="" width="150" height="100" />
       <p class="footer-links">
-        <a href="#">O mne</a> · <a href="#">Zručnosti</a> ·
-        <a href="#">Kontakt</a>
+        <a href="/">O mne</a> · <a href="/projects">Projeky</a> ·
+        <a href="/contact">Kontakt</a>
       </p>
       <p class="footer-company-name footer-shadow">
         Bratislava ©

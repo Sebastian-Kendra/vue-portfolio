@@ -4,7 +4,7 @@
       class="logo-svg"
       :class="{ active: isActive }"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 218.78 169.12"
+      viewBox="0 0 218 169"
     >
       <title>logo-svg</title>
       <g id="Vrstva_1" data-name="Vrstva 1">
@@ -70,7 +70,7 @@ export default {
 
     setTimeout(() => {
       state.isActive = true
-    }, '300')
+    }, '200')
 
     return {
       ...toRefs(state),
@@ -88,8 +88,6 @@ export default {
 }
 
 .logo-svg {
-  position: relative;
-  z-index: 1;
   width: 100%;
   height: auto;
 }
