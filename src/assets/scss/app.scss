@@ -15,29 +15,6 @@
 // ------ CONTENT ------ //
 @import 'content.scss';
 
-.home-view {
-    display: block;
-}
-
-.fade-in {
-    animation: fadeInDown;
-    animation-duration: 2s;
-}
-
-.footer-animate {
-    opacity: 0;
-}
-
-.fade-in-footer {
-    opacity: 1;
-    animation: fadeIn;
-    animation-duration: 2s;
-}
-
-.contact-btn-link {
-    color: $bg-color-page;
-}
-
 // ------ BUTTONS ------ //
 @import 'buttons.scss';
 

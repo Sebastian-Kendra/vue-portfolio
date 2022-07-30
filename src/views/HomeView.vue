@@ -1,29 +1,7 @@
 <template>
   <div class="home-view">
     <div class="flex">
-      <div class="hero">
-        <!--  eslint-disable-next-line prettier/prettier -->
-
-        <div class="text-zone fade-in">
-          <h1>Sebastián Kendra</h1>
-          <h2>Front-end developer</h2>
-
-          <div class="wrapper-btn">
-            <button class="primary-btn btn">
-              <p>
-                <a href="/contact" class="contact-btn-link"> Kontaktuj ma </a>
-              </p>
-            </button>
-            <button class="second-btn btn">
-              <p>
-                <a href="Sebastián-Kendra.pdf" download="">Stiahni životopis</a>
-              </p>
-            </button>
-          </div>
-        </div>
-        <!--  eslint-disable-next-line prettier/prettier -->
-      </div>
-
+      <HomeHero />
       <LogoSvg />
     </div>
 
@@ -40,6 +18,7 @@
 <script>
 import LogoSvg from '@/components/LogoSvg.vue'
 import FooterView from '@/components/FooterView.vue'
+import HomeHero from '../components/HomeHero.vue'
 
 import { reactive, toRefs, onMounted, ref } from 'vue'
 
@@ -67,6 +46,6 @@ export default {
     }
   },
   name: 'HomeView',
-  components: { FooterView, LogoSvg },
+  components: { FooterView, LogoSvg, HomeHero },
 }
 </script>

@@ -91,3 +91,13 @@ footer span {
 .footer-shadow {
     color: $bg-color-icon;
 }
+
+.footer-animate {
+    opacity: 0;
+}
+
+.fade-in-footer {
+    opacity: 1;
+    animation: fadeIn;
+    animation-duration: 2s;
+}

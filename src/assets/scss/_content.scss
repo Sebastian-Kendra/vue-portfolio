@@ -1,31 +1,24 @@
 // ------            ------ //
 // ------ ABOUT PAGE ------ //
 // ------            ------ //
+.home-view {
+    display: block;
+}
 
 .flex {
     margin: 1.5em 0 2em 0;
     display: flex;
+    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
 }
 
-.logo-header {
-    position: relative;
-    top: 10px;
-    width: 50px;
-}
-
 .hero {
-    margin: 35px;
-    margin-top: 100px;
+    margin: 2.1875em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    h1 {
-        font-size: 2.9rem;
-    }
 
     h2 {
         font-size: 1.9rem;
@@ -34,5 +27,14 @@
 
     .wrapper-btn {
         margin-top: 3.125em;
+
+        .contact-btn-link {
+                color: $bg-color-page;
+            }
+    }
+
+    .fade-in {
+        animation: fadeInDown;
+        animation-duration: 2s;
     }
 }

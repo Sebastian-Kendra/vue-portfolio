@@ -8,6 +8,21 @@ body {
     background-color: $bg-color-page;
 }
 
+h1 {
+    font-size: 2.9rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+h1,h2 {
+    margin: {
+        top: 0.8em;
+        bottom: 0.8em;
+    };
+}
+
 input,
 textarea {
     font-family: $page-font;
