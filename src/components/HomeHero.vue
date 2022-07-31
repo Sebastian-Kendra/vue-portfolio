@@ -5,16 +5,16 @@
       <h2>Front-end developer</h2>
 
       <div class="wrapper-btn">
-        <button class="primary-btn btn">
-          <p>
-            <a href="/contact" class="contact-btn-link"> Kontaktuj ma </a>
-          </p>
-        </button>
-        <button class="second-btn btn">
-          <p>
-            <a href="Sebastián-Kendra.pdf" download="">Stiahni životopis</a>
-          </p>
-        </button>
+        <a href="/contact" class="contact-btn-link">
+          <button class="primary-btn btn">
+            <p>Kontaktuj ma</p>
+          </button>
+        </a>
+        <a href="Sebastián-Kendra.pdf" download="">
+          <button class="second-btn btn">
+            <p>Stiahni životopis</p>
+          </button>
+        </a>
       </div>
     </div>
   </div>

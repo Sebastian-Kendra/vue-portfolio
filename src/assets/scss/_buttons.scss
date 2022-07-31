@@ -1,5 +1,6 @@
 /* BUTTONS */
 .btn {
+    cursor: pointer;
     display: inline-block;
     font-size: $link-font-size;
     font-family: $page-font;
@@ -39,17 +40,17 @@
 }
 
 .second-btn {
-    background: rgba(245, 245, 245, 0.219);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+    background: rgba(245, 245, 245, 0.168);
     color: $btn-color-secondary;
     border-color: #26a0da;
 }
 
 .second-btn:hover,
 .second-btn:focus {
-    @include gradient-button(#314755,#26a0da);
+    background-color: $bg-color-btn-second;
+    /* 
+    @include gradient-button(#314755,#2180ac); */
+    background-position: right;
     color: $btn-color-primary;
     text-decoration: none;
     border-color: rgba(0, 0, 0, 0);
