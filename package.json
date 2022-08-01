@@ -12,6 +12,7 @@
     "animate.css": "^4.1.1",
     "bulma": "^0.9.4",
     "core-js": "^3.8.3",
+    "emailjs": "^4.0.0",
     "gsap-trial": "^3.10.4",
     "jsloader": "^1.0.1",
     "leaflet": "^1.8.0",
