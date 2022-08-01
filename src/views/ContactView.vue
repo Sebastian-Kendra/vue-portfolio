@@ -20,6 +20,7 @@
       <label for="your-email">Váš email (povinné)</label>
       <input
         type="email"
+        ref="email"
         id="your-email"
         name="email"
         placeholder="Email"
@@ -27,6 +28,7 @@
       />
       <label for="your-message">Vaša správa</label>
       <textarea
+        ref="message"
         name="message"
         id="your-message"
         placeholder="Správa"
@@ -53,6 +55,8 @@ export default {
 
     const form = ref()
     const formName = ref()
+    const message = ref()
+    const email = ref()
 
     const con = () => {
       console.log(formName.value.value)
@@ -63,7 +67,11 @@ export default {
         .send(
           'service_50hiprx',
           'template_hi7xcoe',
-          form.value,
+          {
+            from_name: formName.value.value,
+            message: message.value.value,
+            email: email.value.value,
+          },
           'XlI49EnBhMCSFPwm1'
         )
         .then(
@@ -80,6 +88,8 @@ export default {
       ...toRefs(state),
       form,
       formName,
+      message,
+      email,
       con,
       submitHandle,
     }
