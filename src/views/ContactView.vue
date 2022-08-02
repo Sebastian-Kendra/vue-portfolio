@@ -10,7 +10,6 @@
       <label for="your-name"> Vaše meno (povinné)</label>
       <input
         type="text"
-        @click="con"
         ref="formName"
         id="your-name"
         name="from_name"
@@ -58,10 +57,6 @@ export default {
     const message = ref()
     const email = ref()
 
-    const con = () => {
-      console.log(formName.value.value)
-    }
-
     const submitHandle = () => {
       emailjs
         .send(
@@ -90,7 +85,6 @@ export default {
       formName,
       message,
       email,
-      con,
       submitHandle,
     }
   },
