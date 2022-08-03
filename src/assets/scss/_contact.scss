@@ -57,8 +57,6 @@ textarea {
     background: transparentize($bg-color-icon, .1);
     color: $bg-color-page;
     border-radius: $border-radius;
-    animation: fadeIn 1s 1.5s;
-    animation-fill-mode: forwards;
     z-index: 100;
     right: 10px;
     top: 10px;

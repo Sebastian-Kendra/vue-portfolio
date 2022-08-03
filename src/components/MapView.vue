@@ -14,27 +14,20 @@
         layer-type="base"
         name="OpenStreetMap"
       ></l-tile-layer>
-
-      <l-circle :lat-lng="[48.137, 17.11]" :radius="4000" color="green" />
     </l-map>
   </div>
 </template>
 <script>
-import {
-  LMap,
-  LTileLayer,
-  LCircle,
-} from '@vue-leaflet/vue-leaflet/src/components'
+import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet/src/components'
 
 export default {
   components: {
     LMap,
     LTileLayer,
-    LCircle,
   },
   data() {
     return {
-      zoom: 10,
+      zoom: 6,
     }
   },
 }

@@ -1,7 +1,6 @@
 <template>
   <div class="contact flex">
     <ContactForm />
-
     <MapView />
   </div>
   <FooterView />
