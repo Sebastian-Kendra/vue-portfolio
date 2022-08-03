@@ -1,41 +1,43 @@
 <template>
-  <h1>Kontaktuj ma</h1>
-  <form
-    id="contact-form"
-    class="contact-form"
-    ref="form"
-    @submit.prevent="submitHandle"
-  >
-    <label for="your-name"> Vaše meno (povinné)</label>
-    <input
-      type="text"
-      ref="formName"
-      id="your-name"
-      name="from_name"
-      placeholder="Meno"
-      required
-    />
-    <label for="your-email">Váš email (povinné)</label>
-    <input
-      type="email"
-      ref="email"
-      id="your-email"
-      name="email"
-      placeholder="Email"
-      required
-    />
-    <label for="your-message">Vaša správa</label>
-    <textarea
-      ref="message"
-      name="message"
-      id="your-message"
-      placeholder="Správa"
-      cols="40"
-      rows="10"
-      style="width: 600px; height: 183px"
-    ></textarea>
-    <input type="submit" class="btn second-btn submit-btn" value="SEND" />
-  </form>
+  <div class="contact-wrapper">
+    <h1>Kontaktuj ma</h1>
+    <form
+      id="contact-form"
+      class="contact-form"
+      ref="form"
+      @submit.prevent="submitHandle"
+    >
+      <label for="your-name"> Vaše meno (povinné)</label>
+      <input
+        type="text"
+        ref="formName"
+        id="your-name"
+        name="from_name"
+        placeholder="Meno"
+        required
+      />
+      <label for="your-email">Váš email (povinné)</label>
+      <input
+        type="email"
+        ref="email"
+        id="your-email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+      <label for="your-message">Vaša správa</label>
+      <textarea
+        ref="message"
+        name="message"
+        id="your-message"
+        placeholder="Správa"
+        cols="40"
+        rows="10"
+        style="width: 600px; height: 183px"
+      ></textarea>
+      <input type="submit" class="btn second-btn submit-btn" value="SEND" />
+    </form>
+  </div>
 </template>
 
 <script>

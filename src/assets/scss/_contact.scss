@@ -43,3 +43,22 @@ textarea {
 		border-color: $hover-nav-color;
 	}
 }
+
+.info-map {
+    max-width: 400px;
+    text-align: left;
+    line-height: 1.5;
+    background: $bg-color-icon;
+    color: $bg-color-page;
+    border-radius: $border-radius;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+
+    p {
+        padding: 1em;
+    }
+
+    span {
+            color: $color-page-btn-light;
+    }
+}
