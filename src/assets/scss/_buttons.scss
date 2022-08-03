@@ -48,9 +48,6 @@
 .second-btn:hover,
 .second-btn:focus {
     background-color: $bg-color-btn-second;
-    /* 
-    @include gradient-button(#314755,#2180ac); */
-    background-position: right;
     color: $btn-color-primary;
     text-decoration: none;
     border-color: rgba(0, 0, 0, 0);
