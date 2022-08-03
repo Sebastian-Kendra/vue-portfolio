@@ -27,7 +27,7 @@ input,
 textarea {
 	color: $page-color;
 
-	border: 2px solid $page-color;
+	border: 2px solid lighten($bg-color-btn-second, 60);
 	background-color: $bg-header;
 	outline: none;
 

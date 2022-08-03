@@ -75,8 +75,8 @@ export default {
           'XlI49EnBhMCSFPwm1'
         )
         .then(
-          (result) => {
-            console.log('SUCCESS!', result)
+          () => {
+            alert('Správa odoslaná')
           },
           (error) => {
             console.log('FAILED...', error.text)
