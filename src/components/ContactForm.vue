@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-wrapper">
+  <div class="form-wrapper">
     <h1>Kontaktuj ma</h1>
     <form
       id="contact-form"

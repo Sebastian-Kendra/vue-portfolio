@@ -16,11 +16,13 @@
     "emailjs": "^4.0.0",
     "gsap-trial": "^3.10.4",
     "jsloader": "^1.0.1",
+    "leaflet": "^1.8.0",
     "loaders.css": "^0.1.2",
     "sass": "^1.54.0",
     "sass-loader": "^13.0.2",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vue2-leaflet": "^2.7.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

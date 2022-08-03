@@ -1,13 +1,17 @@
 <template>
-  <div class="contact">
+  <div class="contact flex">
     <ContactForm />
-    <div class="wrapper-map"></div>
+
+    <MapView />
   </div>
+  <FooterView />
 </template>
 
 <script>
 import { reactive, toRefs } from 'vue'
 import ContactForm from '../components/ContactForm.vue'
+import MapView from '../components/MapView.vue'
+import FooterView from '../components/FooterView.vue'
 
 export default {
   setup() {
@@ -19,6 +23,6 @@ export default {
       ...toRefs(state),
     }
   },
-  components: { ContactForm },
+  components: { ContactForm, FooterView, MapView },
 }
 </script>

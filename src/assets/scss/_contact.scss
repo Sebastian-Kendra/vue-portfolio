@@ -3,6 +3,10 @@
     h1 {
             margin-bottom: 0;
         }
+
+    .form-wrapper {
+        margin: 1.2em;
+    }
 }
 
 .contact-form {
@@ -45,20 +49,52 @@ textarea {
 }
 
 .info-map {
-    max-width: 400px;
+    position: absolute;
+    max-width: 220px;
+    width: 100%;
     text-align: left;
     line-height: 1.5;
-    background: $bg-color-icon;
+    background: transparentize($bg-color-icon, .1);
     color: $bg-color-page;
     border-radius: $border-radius;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
+    z-index: 100;
+    right: 10px;
+    top: 10px;
 
     p {
-        padding: 1em;
+        padding: {
+            top: 0.5em;
+            left: 0.7em;
+            bottom: 0.5em;
+        };
     }
 
     span {
             color: $color-page-btn-light;
     }
+}
+
+.wrapper-map {
+    height: 75vh;
+    max-height: 550px;
+    width: 100%;
+    max-width: 750px;
+    position: relative;
+    
+    .map {
+        z-index: 10;
+    }
+
+    .leaflet-container {
+        border-radius: $border-radius;
+    }
+
+    margin: {
+        top: 1em;
+        right: 1em;
+        right: 1.2em;
+        left: 1.2em;
+    };
 }
