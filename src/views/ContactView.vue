@@ -1,100 +1,27 @@
 <template>
-  <div class="contact">
-    <h1>Kontaktuj ma</h1>
-    <form
-      id="contact-form"
-      class="contact-form"
-      ref="form"
-      @submit.prevent="submitHandle"
-    >
-      <label for="your-name"> Vaše meno (povinné)</label>
-      <input
-        type="text"
-        @click="con"
-        ref="formName"
-        id="your-name"
-        name="from_name"
-        placeholder="Meno"
-        required
-      />
-      <label for="your-email">Váš email (povinné)</label>
-      <input
-        type="email"
-        ref="email"
-        id="your-email"
-        name="email"
-        placeholder="Email"
-        required
-      />
-      <label for="your-message">Vaša správa</label>
-      <textarea
-        ref="message"
-        name="message"
-        id="your-message"
-        placeholder="Správa"
-        cols="40"
-        rows="10"
-        style="width: 600px; height: 183px"
-      ></textarea>
-      <input type="submit" class="btn second-btn submit-btn" value="SEND" />
-    </form>
-
-    <div class="wrapper-map"></div>
+  <div class="contact flex">
+    <ContactForm />
+    <MapView />
   </div>
+  <FooterView />
 </template>
 
 <script>
-import { reactive, toRefs, ref } from 'vue'
-import emailjs from '@emailjs/browser'
+import { reactive, toRefs } from 'vue'
+import ContactForm from '../components/ContactForm.vue'
+import MapView from '../components/MapView.vue'
+import FooterView from '../components/FooterView.vue'
 
 export default {
   setup() {
     const state = reactive({
-      count: 0,
+      zero: '',
     })
-
-    const form = ref()
-    const formName = ref()
-    const message = ref()
-    const email = ref()
-
-    const con = () => {
-      console.log(formName.value.value)
-    }
-
-    const submitHandle = () => {
-      emailjs
-        .send(
-          'service_50hiprx',
-          'template_hi7xcoe',
-          {
-            from_name: formName.value.value,
-            message: message.value.value,
-            email: email.value.value,
-          },
-          'XlI49EnBhMCSFPwm1'
-        )
-        .then(
-          () => {
-            alert('Správa odoslaná')
-          },
-          (error) => {
-            console.log('FAILED...', error.text)
-          }
-        )
-    }
 
     return {
       ...toRefs(state),
-      form,
-      formName,
-      message,
-      email,
-      con,
-      submitHandle,
     }
   },
+  components: { ContactForm, FooterView, MapView },
 }
 </script>
-
-<style lang="scss" scoped></style>

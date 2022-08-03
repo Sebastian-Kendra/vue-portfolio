@@ -14,7 +14,7 @@
     <div class="footer-center">
       <div>
         <i class="fa fa-map-marker" aria-hidden="true"></i>
-        <p><span>Nad Lúčkami 45</span> Slovensko, SK</p>
+        <p><span>Bratislava</span> Slovensko, SK</p>
       </div>
       <div>
         <i class="fa fa-phone" aria-hidden="true"></i>
