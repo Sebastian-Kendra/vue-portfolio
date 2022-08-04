@@ -6,6 +6,7 @@
 
     .form-wrapper {
         margin: 1.2em;
+        font-size: 1em;
     }
 }
 
@@ -75,10 +76,9 @@ textarea {
 }
 
 .wrapper-map {
-    height: 75vh;
-    max-height: 550px;
+    height: 70vh;
     width: 100%;
-    max-width: 750px;
+    max-width: 45em;
     position: relative;
     
     .map {

@@ -5,10 +5,18 @@
     display: block;
 }
 
-.flex {
+.flex-reverse {
     margin: 1.5em 0 2em 0;
     display: flex;
     flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    margin: 1.5em 0 2em 0;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="home-view">
-    <div class="flex">
+    <div class="flex-reverse">
       <HomeHero />
       <LogoSvg />
     </div>
