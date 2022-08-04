@@ -11,7 +11,7 @@
 
 .contact-form {
 	max-width: 35em;
-	margin: 2.5em auto;
+	margin: 2.5em 2em;
 	text-align: left;
 
 	label {
@@ -39,7 +39,7 @@ textarea {
 
 	display: block;
 	max-width: 95%;
-	width: 100%;
+	width: 95%;
 
 	border-radius: $border-radius;
 
@@ -101,5 +101,9 @@ textarea {
     position: absolute;
     top: 35%;
     left: 45.5%;
+    z-index: 100;
+}
+
+.marker {
     z-index: 100;
 }

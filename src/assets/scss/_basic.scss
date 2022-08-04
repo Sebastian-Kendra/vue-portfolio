@@ -2,6 +2,11 @@ html {
     font-size: 90%;
 }
 
+::selection {
+    background-color: $hover-nav-color;
+    color: $btn-color-primary;
+}
+
 body {
     margin: 0;
     font-family: $page-font;
