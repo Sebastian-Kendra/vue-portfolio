@@ -16,7 +16,6 @@
         name="OpenStreetMap"
       ></l-tile-layer>
       <l-marker class="marker" :lat-lng="[48.137, 17.11]" :icon="icon">
-        <!--  -->
       </l-marker>
     </l-map>
   </div>
