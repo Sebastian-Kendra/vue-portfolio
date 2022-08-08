@@ -7,6 +7,22 @@ html {
     color: $btn-color-primary;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #314755, #26a0da );
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, .12) 0 3px 13px 1px;
+}
+
 body {
     margin: 0;
     font-family: $page-font;
