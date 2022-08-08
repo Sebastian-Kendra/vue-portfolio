@@ -43,3 +43,8 @@ p {
     padding: 0;
     text-decoration: none;
 }
+
+.disabled {
+    opacity: 0.25;
+    pointer-events: none;
+}
