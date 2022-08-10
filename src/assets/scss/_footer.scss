@@ -63,21 +63,21 @@ footer img {
 .footer-icons i {
     display: inline-block;
     width: 2.1875em;
-    height: 2.1875em;
-    cursor: pointer;
+    height: auto;
     background-color: $bg-color-icon;
     border-radius: 0.125em;
     font-size: 1.25em;
     color: $bg-color-page;
     text-align: center;
     line-height: 2.1875em;
-    margin-top: 1em;
-    margin-right: 0.1875em;
-    margin-bottom: 0.3125em;
 }
 
 footer a {
     color: $bg-color-icon;
+    width: 100%;
+    height: auto;
+    margin: 0.125em;
+    padding: 0.625em 0;
 }
 
 .footer-company-name {
