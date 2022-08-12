@@ -17,6 +17,15 @@ export default {
   components: {
     TheNavigation,
   },
+  mounted() {
+    this.cursor()
+  },
+  methods: {
+    /* eslint-disable no-undef */
+    /* eslint-disable no-unused-vars */
+
+    cursor() {},
+  },
 }
 </script>
 
