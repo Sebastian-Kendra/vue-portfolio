@@ -5,6 +5,8 @@
         }
 
     .form-wrapper {
+        max-width: 35em;
+        width: 100%;
         margin: 1.2em;
         font-size: 1em;
 
@@ -15,7 +17,6 @@
 }
 
 .contact-form {
-	max-width: 35em;
 	margin: 2.5em 2em;
 	text-align: left;
 
@@ -110,4 +111,10 @@ textarea {
 
 .marker {
     z-index: 100;
+}
+
+@media (max-width: 1240px)  {
+    .contact .form-wrapper {
+        max-width: 45em;
+    }
 }
