@@ -7,10 +7,9 @@
     <div class="about-me">
       <div class="line"></div>
       <p class="fadeIn">
-        Niečo o mne Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Saepe, eveniet. Debitis impedit pariatur earum quos, cupiditate dicta.
-        Excepturi, nulla enim dolore, commodi in modi distinctio nemo neque,
-        pariatur aspernatur facere!
+        Ahoj. Volám sa Sebastián a baví ma vytvárať veci, ktoré žijú na
+        internete. Zaroveň som nadšenec do technológií a posledný rok a pol sa
+        vo voľnom čase venujem a učím front-end.
       </p>
     </div>
     <div class="fade-in-footer">
