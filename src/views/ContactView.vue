@@ -1,5 +1,5 @@
 <template>
-  <div class="contact flex" ref="contact">
+  <div class="contact flex">
     <ContactForm />
     <MapView />
   </div>
