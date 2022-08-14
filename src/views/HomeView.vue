@@ -22,25 +22,9 @@
 import LogoSvg from '@/components/LogoSvg.vue'
 import FooterView from '@/components/FooterView.vue'
 import HomeHero from '../components/HomeHero.vue'
-import { reactive, toRefs } from 'vue'
 
 export default {
   name: 'HomeView',
-  setup() {
-    const state = reactive({
-      samState: '',
-    })
-
-    const resizeHand = (e) => {
-      console.log(e)
-    }
-
-    return {
-      ...toRefs(state),
-      resizeHand,
-    }
-  },
-
   components: { FooterView, LogoSvg, HomeHero },
 }
 </script>

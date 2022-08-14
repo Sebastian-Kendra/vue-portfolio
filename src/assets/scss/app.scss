@@ -12,19 +12,20 @@
 // ------ NAVIGATION ------ //
 @import 'navigation.scss';
 
-// ------ CONTENT ------ //
-@import 'content.scss';
+// ------ ABOUT ------ //
+@import 'pages/about.scss';
 
 // ------ LOGOHOME ------ //
 @import 'logohome.scss';
 
-// ------              ------ //
 // ------ CONTACT PAGE ------ //
-// ------              ------ //
-@import 'contact.scss';
+@import 'pages/contact.scss';
 
 // ------ BUTTONS ------ //
 @import 'buttons.scss';
 
 // ------ FOOTER ------ //
 @import 'footer.scss';
+
+// ------ MEDIA ------ //
+@import 'media.scss';
