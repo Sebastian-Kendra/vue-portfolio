@@ -80,17 +80,15 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    width: var(--width);
-    height: var(--height);
+    width: 42px;
+    height: 42px;
     transform:
-        translate(calc(var(--x) - var(--width) / 2),
-            calc(var(--y) - var(--height) / 2));
+        translate(calc(var(--x) - 42px / 2),
+            calc(var(--y) - 42px / 2));
     transition-duration: .1s;
     transition-timing-function: cubic-bezier(.25, .25, .42, 1);
-    transition-property: width, height, transform;
     z-index: 10000;
     pointer-events: none;
-    will-change: transform;
 
     @media (pointer: fine) {
         display: block;
@@ -103,13 +101,7 @@ p {
         left: 0;
         right: 0;
         bottom: 0;
-        border-radius: var(--radius);
+        border-radius: 100px;
         border: 2px solid rgba(8, 14, 37, 0.293);
-        opacity: var(--scale);
-        transform: scale(var(--scale));
-        transition:
-            .3s cubic-bezier(.25, .25, .42, 1) opacity,
-            .3s cubic-bezier(.25, .25, .42, 1) transform,
-            .1s cubic-bezier(.25, .25, .42, 1) border-radius;
     }
 }
