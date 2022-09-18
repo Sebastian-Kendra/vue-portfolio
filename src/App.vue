@@ -1,6 +1,6 @@
 <template>
   <div class="cursor"></div>
-  <div id="app">
+  <div id="app-container">
     <header class="fade-in">
       <TheNavigation />
     </header>
@@ -23,8 +23,6 @@ export default {
   },
   methods: {
     cursor() {
-      /*  eslint-disable no-undef */
-      /* eslint-disable no-unused-vars  */
       const updateProperties = (elem, state) => {
         elem.style.setProperty('--x', `${state.x}px`)
         elem.style.setProperty('--y', `${state.y}px`)
@@ -45,6 +43,14 @@ export default {
         document.addEventListener('mousemove', (e) => {
           const state = createState(e)
           updateProperties(cursor, state)
+        })
+
+        document.addEventListener('mouseleave', () => {
+          cursor.style.setProperty('--display', 'none')
+        })
+
+        document.addEventListener('mouseenter', () => {
+          cursor.style.setProperty('--display', 'block')
         })
       })
     },

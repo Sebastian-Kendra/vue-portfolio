@@ -76,7 +76,7 @@ p {
 }
 
 .cursor {
-    display: none;
+    display: hide;
     position: fixed;
     top: 0;
     left: 0;
@@ -95,6 +95,7 @@ p {
     }
 
     &::after {
+        display: var(--display, block);
         content: '';
         position: absolute;
         top: 0;
@@ -104,4 +105,5 @@ p {
         border-radius: 100px;
         border: 2px solid rgba(8, 14, 37, 0.293);
     }
+
 }

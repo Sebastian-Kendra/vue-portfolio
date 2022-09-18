@@ -8,8 +8,8 @@
       <div class="line"></div>
       <p class="fadeIn">
         Ahoj. Volám sa Sebastián a baví ma vytvárať veci, ktoré žijú na
-        internete. Zaroveň som nadšenec do technológií a posledný rok a pol sa
-        vo voľnom čase venujem a učím front-end.
+        internete. Zaroveň som nadšenec do technológií a posledné dva roky sa vo
+        voľnom čase venujem a učím front-end.
       </p>
     </div>
     <div class="fade-in-footer">
@@ -26,5 +26,15 @@ import HomeHero from '../components/HomeHero.vue'
 export default {
   name: 'HomeView',
   components: { FooterView, LogoSvg, HomeHero },
+  methods: {
+    getDots() {
+      let obj = document.createElement('div')
+      obj.classList.add('box')
+      document.body.appendChild(obj)
+    },
+  },
+  mounted() {
+    this.getDots()
+  },
 }
 </script>
