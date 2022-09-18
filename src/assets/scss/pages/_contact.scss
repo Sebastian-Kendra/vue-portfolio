@@ -86,7 +86,7 @@ textarea {
 
 .wrapper-map {
     height: 70vh;
-    width: 100%;
+    width: 70vw;
     max-width: 45em;
     position: relative;
     
@@ -115,4 +115,10 @@ textarea {
 
 .marker {
     z-index: 100;
+}
+
+@media ( max-width: 700px ) {
+    .wrapper-map {
+        width: 90vw;
+    }
 }
