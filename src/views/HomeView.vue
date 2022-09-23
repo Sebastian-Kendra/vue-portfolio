@@ -26,15 +26,5 @@ import HomeHero from '../components/HomeHero.vue'
 export default {
   name: 'HomeView',
   components: { FooterView, LogoSvg, HomeHero },
-  methods: {
-    getDots() {
-      let obj = document.createElement('div')
-      obj.classList.add('box')
-      document.body.appendChild(obj)
-    },
-  },
-  mounted() {
-    this.getDots()
-  },
 }
 </script>
