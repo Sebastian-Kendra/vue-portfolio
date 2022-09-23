@@ -37,6 +37,9 @@ body {
     margin: 0;
     font-family: $page-font;
     background-color: $bg-color-page;
+    height: 100vh;
+    width: 100%;    
+    position: relative;
 }
 
 h1 {
@@ -95,7 +98,7 @@ p {
     }
 
     &::after {
-        display: var(--display, block);
+        display: var(--display, none);
         content: '';
         position: absolute;
         top: 0;
