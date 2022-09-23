@@ -41,16 +41,22 @@ export default {
         }
 
         document.addEventListener('mousemove', (e) => {
-          const state = createState(e)
-          updateProperties(cursor, state)
+          if (typeof window.orientation === 'undefined') {
+            const state = createState(e)
+            updateProperties(cursor, state)
+          }
         })
 
         document.addEventListener('mouseleave', () => {
-          cursor.style.setProperty('--display', 'none')
+          if (typeof window.orientation === 'undefined') {
+            cursor.style.setProperty('--display', 'none')
+          }
         })
 
         document.addEventListener('mouseenter', () => {
-          cursor.style.setProperty('--display', 'block')
+          if (typeof window.orientation === 'undefined') {
+            cursor.style.setProperty('--display', 'block')
+          }
         })
       })
     },
