@@ -23,8 +23,8 @@
 
 .hero {
     margin: {
-        right: 2em;
-        left: 2em;    
+        right: 1em;
+        left: 1em;    
     };
     display: flex;
     flex-direction: column;
@@ -32,7 +32,6 @@
     align-items: center;
 
     h2 {
-        font-size: 1.9rem;
         margin-top: 0;
     }
 
@@ -51,7 +50,7 @@
 }
 
 .about-me {
-    max-width: 62.5em;
+    max-width: 60.5em;
     height: auto;
     width: 100%;
     text-align: center;
@@ -66,6 +65,42 @@
     }
 
     p {
-        padding: 1.2em;
+        padding: {
+            top: 1.2em;
+            bottom: 1.2em;
+            right: 12em;
+            left: 12em;
+        };
+
+    }
+}
+
+@media (max-width: 1270px) {
+
+    .about-me {
+        max-width: 48.5em;
+        p {
+                padding: {
+                    right: 3em;
+                    left: 3em;
+                }
+            }
+    }
+}
+
+@media (max-width: 900px) {
+    .about-me {
+        max-width: 60vw;
+   }
+}
+
+@media (max-width: 900px) {
+    .about-me {
+        p {
+            padding: {
+                right: 0.5em;
+                left: 0.5em;
+            }
+        }
     }
 }

@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 90%;
+    font-size: 110%;
     cursor: url(../img/circle-dot-solid.svg) 4.5 4.5, auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -43,11 +43,11 @@ body {
 }
 
 h1 {
-    font-size: 2.9em;
+    font-size: 2.7em;
 }
 
 h2 {
-    font-size: 1.9em;
+    font-size: 1.7em;
 }
 
 h1,h2 {
@@ -71,6 +71,18 @@ p {
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 0 1.25rem;
+    max-width: 1270px;
+    margin: 0 auto;  
 }
 
 .disabled {

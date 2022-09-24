@@ -97,7 +97,7 @@ textarea {
     .leaflet-container {
         border-radius: $border-radius;
     }
-
+    
     margin: {
         top: 1em;
         right: 1em;
@@ -115,6 +115,12 @@ textarea {
 
 .marker {
     z-index: 100;
+}
+
+@media (max-width: 1505px) {
+    .contact .form-wrapper {
+        max-width: 48em;
+    }
 }
 
 @media ( max-width: 700px ) {
