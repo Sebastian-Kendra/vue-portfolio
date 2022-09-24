@@ -6,9 +6,18 @@
     text-align: left;
     display: flex;
     align-items: center;
-    gap: 3vw;
+    gap: 1vw;
     margin-bottom: 10rem;
     padding: 1rem 0; 
+
+    p {
+        padding-bottom: 2rem;
+    }
+}
+
+.container-project {
+    max-width: 1070px;
+    margin: 0 auto;
 }
 
 .project {
@@ -26,7 +35,7 @@
 }
 
 .project figure {
-    flex: 7;
+    flex: 10;
 }
 
 .project .purport {
@@ -40,4 +49,10 @@
         0 16px 16px hsl(0deg 0% 0% / 8%);
     border-radius: $border-radius;
     border: 1px solid $border-color;
+}
+
+@media (max-width: 750px) {
+    .project {
+        display: block;
+    }
 }
