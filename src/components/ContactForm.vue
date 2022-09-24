@@ -33,7 +33,6 @@
         placeholder="Správa"
         cols="40"
         rows="10"
-        style="width: 600px; height: 183px"
       ></textarea>
       <input type="submit" class="btn second-btn submit-btn" value="SEND" />
     </form>

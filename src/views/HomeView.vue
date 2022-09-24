@@ -1,5 +1,5 @@
 <template>
-  <div class="home-view">
+  <div class="home-view container">
     <div class="flex-reverse">
       <HomeHero />
       <LogoSvg />
