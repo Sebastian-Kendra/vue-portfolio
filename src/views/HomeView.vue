@@ -12,9 +12,7 @@
         voľnom čase venujem a učím front-end.
       </p>
     </div>
-    <div class="fade-in-footer">
-      <FooterView />
-    </div>
+    <FooterView />
   </div>
 </template>
 

@@ -66,6 +66,7 @@ export default {
         )
         .then(
           (result) => {
+            alert('Sprava úspešne odoslaná')
             console.log('SUCCESS!', result)
           },
           (error) => {
