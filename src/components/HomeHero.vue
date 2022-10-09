@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <div class="text-zone fade-in">
+    <div class="text-zone fade-in-down">
       <h1>Sebastián Kendra</h1>
       <h2>Front-end developer</h2>
 

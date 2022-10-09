@@ -1,12 +1,12 @@
 <template>
   <div class="project-view container">
-    <h1>Projekty</h1>
+    <h1 class="fade-in-down">Projekty</h1>
     <!-- 
     <div class="parallax">
       <div class="parallax__layer parallax__layer--back">...</div>
       <div class="parallax__layer parallax__layer--base">...</div> -->
     <div class="container-project">
-      <article class="project">
+      <article class="project fade-in-left">
         <figure>
           <a href="../assets/img/img-project/list.jpg" target="_blank"
             ><img
@@ -27,7 +27,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" v-motion-slide-visible-once-right :delay="350">
         <figure>
           <a href="../assets/img/img-project/hudba.jpg" target="_blank"
             ><img
@@ -48,9 +48,9 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" v-motion-slide-visible-once-left :delay="350">
         <figure>
-          <a href="../assets/img/img-project/komercna.jpg" target="_blank"
+          <a href="https://cwconstructionltd.com/" target="_blank"
             ><img
               class="box"
               src="../assets/img/img-project/komercna-min.jpg"

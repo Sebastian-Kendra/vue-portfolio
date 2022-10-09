@@ -42,11 +42,6 @@
                 color: $bg-color-page;
             }
     }
-
-    .fade-in {
-        animation: fadeInDown;
-        animation-duration: 2s;
-    }
 }
 
 .about-me {
@@ -71,7 +66,6 @@
             right: 12em;
             left: 12em;
         };
-
     }
 }
 

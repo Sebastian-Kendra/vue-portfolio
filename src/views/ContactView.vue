@@ -1,7 +1,7 @@
 <template>
   <div class="contact flex">
-    <ContactForm />
-    <MapView />
+    <ContactForm class="fade-in-left" />
+    <MapView class="fade-in-right" />
   </div>
   <FooterView />
 </template>

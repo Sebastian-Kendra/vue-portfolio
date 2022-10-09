@@ -47,17 +47,19 @@ export default {
           }
         })
 
-        document.addEventListener('mouseleave', () => {
-          if (typeof window.orientation === 'undefined') {
-            cursor.style.setProperty('--display', 'none')
-          }
-        })
+        setTimeout(() => {
+          document.addEventListener('mouseleave', () => {
+            if (typeof window.orientation === 'undefined') {
+              cursor.style.setProperty('--display', 'none')
+            }
+          })
 
-        document.addEventListener('mouseenter', () => {
-          if (typeof window.orientation === 'undefined') {
-            cursor.style.setProperty('--display', 'block')
-          }
-        })
+          document.addEventListener('mouseenter', () => {
+            if (typeof window.orientation === 'undefined') {
+              cursor.style.setProperty('--display', 'block')
+            }
+          })
+        }, '10')
       })
     },
   },

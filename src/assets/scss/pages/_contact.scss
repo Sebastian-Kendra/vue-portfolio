@@ -3,13 +3,13 @@
 // ------              ------ //
 
 .contact {
+    width: 100%;
 
     h1 {
             margin-bottom: 0;
         }
 
     .form-wrapper {
-        margin: 1.2em;
 
         p {
             margin: 2.5em 2em;
@@ -59,7 +59,6 @@ textarea {
     font-size: 70%;
     position: absolute;
     max-width: 220px;
-    width: 100%;
     text-align: left;
     line-height: 1.5;
     background: transparentize($bg-color-icon, .1);
@@ -73,6 +72,7 @@ textarea {
         padding: {
             top: 0.5em;
             left: 0.7em;
+            right: 0.7em;
             bottom: 0.5em;
         };
     }
@@ -95,13 +95,6 @@ textarea {
     .leaflet-container {
         border-radius: $border-radius;
     }
-    
-    margin: {
-        top: 1em;
-        right: 1em;
-        right: 1.2em;
-        left: 1.2em;
-    };
 }
 
 .svg-pin {
@@ -113,4 +106,44 @@ textarea {
 
 .marker {
     z-index: 100;
+}
+
+
+@media (max-width: 950px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 55vw;
+
+        margin: {
+            top: 0;
+            bottom: 1em;
+            right: 0.5em;
+            left: 0.5em;
+        };
+    }
+
+    .wrapper-map {
+        width: 55vw;
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .wrapper-map {
+            height: 55vh;
+        }
+}
+
+@media (max-width: 600px) {    
+    .contact-form {
+        width: 80vw;
+    }
+
+    .wrapper-map {
+        width: 80vw;
+        height: 40vh;
+    }
 }
