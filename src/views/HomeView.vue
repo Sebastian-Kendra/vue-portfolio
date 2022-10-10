@@ -4,17 +4,15 @@
       <HomeHero />
       <LogoSvg />
     </div>
-    <div class="about-me">
+    <div class="about-me fade-in-para">
       <div class="line"></div>
-      <p class="fadeIn">
+      <p class="">
         Ahoj. Volám sa Sebastián a baví ma vytvárať veci, ktoré žijú na
-        internete. Zaroveň som nadšenec do technológií a posledné dva roky sa vo
+        internete. Zároveň som nadšenec do technológií a posledné dva roky sa vo
         voľnom čase venujem a učím front-end.
       </p>
     </div>
-    <div class="fade-in-footer">
-      <FooterView />
-    </div>
+    <FooterView />
   </div>
 </template>
 

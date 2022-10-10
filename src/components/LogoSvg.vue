@@ -69,17 +69,12 @@ export default {
       isActive: false,
     })
 
-    const resizeHand = (e) => {
-      console.log(e)
-    }
-
     setTimeout(() => {
       state.isActive = true
     }, '200')
 
     return {
       ...toRefs(state),
-      resizeHand,
     }
   },
 }
