@@ -29,7 +29,7 @@
 
       <article class="project">
         <figure>
-          <a href="../assets/img/img-project/hudba.jpg" target="_blank"
+          <a @click.prevent="toTunes" target="_blank"
             ><img
               class="box"
               src="../assets/img/img-project/hudba-min.jpg"
@@ -50,7 +50,7 @@
 
       <article class="project">
         <figure>
-          <a href="../assets/img/img-project/komercna.jpg" target="_blank"
+          <a @click.prevent="toCwc" target="_blank"
             ><img
               class="box"
               src="../assets/img/img-project/komercna-min.jpg"
@@ -78,6 +78,14 @@
 import FooterView from '@/components/FooterView.vue'
 
 export default {
+  methods: {
+    toCwc() {
+      window.location.href = 'https://cwconstructionltd.com/'
+    },
+    toTunes() {
+      window.location.href = '../assets/tunes/index.html'
+    },
+  },
   components: { FooterView },
 }
 </script>
