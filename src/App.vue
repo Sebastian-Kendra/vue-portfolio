@@ -41,10 +41,8 @@ export default {
         }
 
         document.addEventListener('mousemove', (e) => {
-          if (typeof window.orientation === 'undefined') {
-            const state = createState(e)
-            updateProperties(cursor, state)
-          }
+          const state = createState(e)
+          updateProperties(cursor, state)
         })
 
         setTimeout(() => {
