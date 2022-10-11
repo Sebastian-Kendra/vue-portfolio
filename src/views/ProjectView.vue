@@ -6,9 +6,9 @@
       <div class="parallax__layer parallax__layer--back">...</div>
       <div class="parallax__layer parallax__layer--base">...</div> -->
     <div class="container-project">
-      <article class="project fade-in-left">
+      <article class="project fade-in-right">
         <figure>
-          <a href="../assets/img/img-project/list.jpg" target="_blank"
+          <a href="/list-exp/index.html" target="_blank"
             ><img
               class="box"
               src="../assets/img/img-project/list-min.jpg"
@@ -27,9 +27,9 @@
         </div>
       </article>
 
-      <article class="project" v-motion-slide-visible-once-right :delay="350">
+      <article class="project" v-motion-slide-visible-once-left>
         <figure>
-          <a href="../assets/img/img-project/hudba.jpg" target="_blank"
+          <a href="/hud-app-exp/index.html" target="_blank"
             ><img
               class="box"
               src="../assets/img/img-project/hudba-min.jpg"
@@ -48,7 +48,7 @@
         </div>
       </article>
 
-      <article class="project" v-motion-slide-visible-once-left :delay="350">
+      <article class="project" v-motion-slide-visible-once-right>
         <figure>
           <a href="https://cwconstructionltd.com/" target="_blank"
             ><img
