@@ -3,6 +3,10 @@ import App from './App.vue'
 import router from './router'
 import { MotionPlugin } from '@vueuse/motion'
 
+import mitt from 'mitt'
+
+window.eventBus = mitt()
+
 import 'leaflet/dist/leaflet.css'
 import '@/assets/scss/app.scss'
 
