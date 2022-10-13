@@ -34,7 +34,7 @@
 
 .project h2 {
     color: $page-color-sec;
-    text-shadow: 2px 2px 2px lighten($page-color-shadow, 20%);
+    text-shadow: 0.0825rem 0.0825rem 0.0625rem lighten($page-color-shadow, 10%);
 }
 
 .project figure {

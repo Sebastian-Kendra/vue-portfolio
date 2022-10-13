@@ -6,7 +6,20 @@
       <div class="parallax__layer parallax__layer--back">...</div>
       <div class="parallax__layer parallax__layer--base">...</div> -->
     <div class="container-project">
-      <article class="project">
+      <article
+        class="project"
+        v-motion
+        :initial="{ opacity: 0, x: -600 }"
+        :enter="{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1000,
+            type: 'keyframes',
+            ease: 'easeOut',
+          },
+        }"
+      >
         <figure>
           <a href="/list-exp/index.html" target="_blank"
             ><img
@@ -27,7 +40,21 @@
         </div>
       </article>
 
-      <article class="project">
+      <article
+        class="project"
+        v-if="lowResolution"
+        v-motion
+        :initial="{ opacity: 0, x: 600 }"
+        :visibleOnce="{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1000,
+            type: 'keyframes',
+            ease: 'easeOut',
+          },
+        }"
+      >
         <figure>
           <a href="/hud-app-exp/index.html" target="_blank"
             ><img
@@ -48,7 +75,20 @@
         </div>
       </article>
 
-      <article class="project">
+      <article
+        class="project"
+        v-motion
+        :initial="{ opacity: 0, x: -600 }"
+        :visibleOnce="{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1000,
+            type: 'keyframes',
+            ease: 'easeOut',
+          },
+        }"
+      >
         <figure>
           <a href="https://cwconstructionltd.com/" target="_blank"
             ><img
@@ -78,6 +118,11 @@
 import FooterView from '@/components/FooterView.vue'
 
 export default {
+  computed: {
+    lowResolution() {
+      return true
+    },
+  },
   methods: {
     toCwc() {
       window.location.href = 'https://cwconstructionltd.com/'
