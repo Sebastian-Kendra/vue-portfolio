@@ -6,9 +6,9 @@
       <div class="parallax__layer parallax__layer--back">...</div>
       <div class="parallax__layer parallax__layer--base">...</div> -->
     <div class="container-project">
-      <article class="project">
+      <article class="project fade-in-right">
         <figure>
-          <a href="/list-exp/index.html" target="_blank"
+          <a href="/list/index.html" target="_blank"
             ><img
               class="box"
               src="../assets/img/img-project/list-min.jpg"
