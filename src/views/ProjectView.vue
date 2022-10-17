@@ -27,7 +27,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project fade-in-left">
         <figure>
           <a href="/hud-app-exp/index.html" target="_blank"
             ><img
