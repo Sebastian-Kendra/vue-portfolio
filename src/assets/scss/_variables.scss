@@ -1,7 +1,7 @@
 // ------ VARIABLES ------ //
-$page-font: 'Montserrat', Arial, sans-serif;
+$page-font: "Montserrat", Arial, sans-serif;
 $page-color: #222222;
-$page-color-sec : #066899;
+$page-color-sec: #066899;
 $page-color-shadow: #222222;
 
 $btn-color-secondary: #222222;
@@ -14,14 +14,21 @@ $bg-header: #fafafaea;
 
 $border-color: #cbcbcb;
 $hover-nav-color: #1878a5;
-$color-page-btn-light:#5cecff;
+$color-page-btn-light: #5cecff;
 
 $link-font-size: 0.65rem;
 $border-radius: 0.4rem;
 
 // ------ MIXINS ------ //
 @mixin gradient-button($color1, $color2) {
-    background-image: -webkit-gradient(linear, left top, right top, from($color1), color-stop(51%, $color2), to($color1));
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from($color1),
+        color-stop(51%, $color2),
+        to($color1)
+    );
     background-image: -o-linear-gradient(left, $color1 0%, $color2 51%, $color1 100%);
     background-image: linear-gradient(to right, $color1 0%, $color2 51%, $color1 100%);
 }

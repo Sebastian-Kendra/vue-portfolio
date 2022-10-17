@@ -11,6 +11,7 @@ Use a better box model (opinionated).
 
 //Tu začina wrap listu
 .wrap-list {
+    font-size: 100%;
     *,
     *::before,
     *::after {
@@ -165,6 +166,10 @@ Tabular data
 Forms
 =====
 */
+
+    form:not(.add-form) {
+        margin: auto 0.3125em;
+    }
 
     /**
 1. Change the font styles in all browsers.
@@ -584,12 +589,12 @@ Add the correct display in Chrome and Safari.
         background-color: rgba(52, 211, 153, var(--bg-opacity));
     }
 
-    @media (min-width: 420px) {
+    @media (min-width: 350px) {
         .list {
             margin-left: 1rem;
             margin-right: 1rem;
             margin-bottom: 0;
-            width: 20rem;
+            width: 23rem;
         }
     }
 
@@ -1284,7 +1289,7 @@ Add the correct display in Chrome and Safari.
         }
     }
 
-    @media (min-width: 420px) {
+    @media (min-width: 350px) {
         .sm\:rounded-3xl {
             border-radius: 1.5rem;
         }
@@ -1367,6 +1372,10 @@ Add the correct display in Chrome and Safari.
     }
 
     @media (min-width: 768px) {
+        .list {
+            font-size: 90%;
+            width: 20rem;
+        }
     }
 
     @media (min-width: 1024px) {
@@ -1438,7 +1447,7 @@ Add the correct display in Chrome and Safari.
     }
 
     a {
-        color: #ebebeb;
+        color: $page-color;
         text-decoration: none;
     }
 
@@ -1451,8 +1460,7 @@ Add the correct display in Chrome and Safari.
     ul {
         padding-left: 0;
         list-style: none;
-        max-width: 22em;
-        margin: 0 auto;
+        margin: auto 0.125em;
         display: grid;
     }
 
@@ -1583,7 +1591,7 @@ Add the correct display in Chrome and Safari.
 
     @media (max-width: 480px) {
         article {
-            font-size: 0.75em;
+            font-size: 0.65em;
         }
     }
 

@@ -1,12 +1,9 @@
 <template>
   <div class="wrap-list">
+    <BackTo />
     <main
       class="flex min-h-screen bg-blue-400 lg:bg-gradient-to-r from-teal-400 to-blue-400"
     >
-      <button>
-        <a href=""><i class="fa-solid fa-chevron-left"></i></a>
-      </button>
-
       <transition-group
         name="list"
         tag="div"
@@ -42,11 +39,13 @@ import ListCreateForm from '@/views/list/components/ListCreateForm'
 import { data } from '@/views/list/data'
 import { addNewList, editListName } from '@/views/list/lists'
 import { addNewCard, deleteCard, editCard } from '@/views/list/cards'
+import BackTo from '@/components/BackTo.vue'
 
 export default {
   components: {
     ListCreateForm,
     ListTrulo,
+    BackTo,
   },
   setup() {
     const lists = ref(data)
