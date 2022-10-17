@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="footer-view">
     <div class="footer-left">
       <img src="img/Logo-sk.png" alt="" width="150" height="100" />
       <p class="footer-links">

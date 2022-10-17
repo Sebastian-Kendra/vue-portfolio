@@ -47,7 +47,7 @@ export const data = [
       {
         id: 1,
         text: 'Dievča + Chlapec = Kaviareň',
-        labels: ['red', 'ping', 'ping', 'ping', 'ping', 'ping', 'red'],
+        labels: ['red', 'ping', 'ping', 'ping', 'red'],
         tags: ['👄', '🥰', '💍', '❤️'],
         image: {
           filename: 'Ja-a-ty.jpeg',

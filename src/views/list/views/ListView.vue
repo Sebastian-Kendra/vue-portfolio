@@ -3,6 +3,10 @@
     <main
       class="flex min-h-screen bg-blue-400 lg:bg-gradient-to-r from-teal-400 to-blue-400"
     >
+      <button>
+        <a href=""><i class="fa-solid fa-chevron-left"></i></a>
+      </button>
+
       <transition-group
         name="list"
         tag="div"
