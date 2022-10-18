@@ -29,8 +29,8 @@ html {
 ::-webkit-scrollbar-thumb {
     background-color: $bg-color-btn-second;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, .12) 0 3px 13px 1px;
-    -webkit-box-shadow: rgba(0, 0, 0, .12) 0 3px 13px 1px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
     font-family: $page-font;
     background-color: $bg-color-page;
     height: 100vh;
-    width: 100%;    
+    width: 100%;
     position: relative;
 }
 
@@ -50,11 +50,12 @@ h2 {
     font-size: 1.7em;
 }
 
-h1,h2 {
+h1,
+h2 {
     margin: {
         top: 0.8em;
         bottom: 0.8em;
-    };
+    }
 }
 
 input,
@@ -80,18 +81,39 @@ img {
 }
 
 figure {
-    margin: 0 ;
+    margin: 0;
+}
+
+aside {
+    margin-top: 0;
 }
 
 .container {
     padding: 0 1.25rem;
     max-width: 1270px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .disabled {
     opacity: 0.25;
     pointer-events: none;
+}
+
+.back-to {
+    display: flex;
+    align-items: center;
+    padding: {
+        top: 0.425em;
+        bottom: 0.425em;
+        left: 2rem;
+    }
+    font-size: 1rem;
+    text-align: left;
+    color: $bg-color-icon;
+
+    .img-back-to {
+        width: 25px;
+    }
 }
 
 .cursor {
@@ -101,11 +123,9 @@ figure {
     left: 0;
     width: 42px;
     height: 42px;
-    transform:
-        translate(calc(var(--x) - 42px / 2),
-            calc(var(--y) - 42px / 2));
-    transition-duration: .1s;
-    transition-timing-function: cubic-bezier(.25, .25, .42, 1);
+    transform: translate(calc(var(--x) - 42px / 2), calc(var(--y) - 42px / 2));
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.25, 0.25, 0.42, 1);
     z-index: 10000;
     pointer-events: none;
 
@@ -115,7 +135,7 @@ figure {
 
     &::after {
         display: var(--display, none);
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -124,5 +144,4 @@ figure {
         border-radius: 100px;
         border: 2px solid rgba(8, 14, 37, 0.293);
     }
-
 }

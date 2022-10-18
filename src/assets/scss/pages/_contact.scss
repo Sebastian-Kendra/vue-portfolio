@@ -6,144 +6,147 @@
     width: 100%;
 
     h1 {
-            margin-bottom: 0;
-        }
+        margin-bottom: 0;
+    }
 
     .form-wrapper {
-
         p {
             margin: 2.5em 2em;
         }
     }
-}
 
-.contact-form {
-	margin: 2.5em 2em;
-	text-align: left;
-
-	label {
-		font-size: 1.0625em;
-		display: block;
-		margin-bottom: 0.05em;
-		margin-top: 1.375em;
-	}
-
-	.btn {
-		margin: 0;
-		margin-top: 1.375em;
-	}
-}
-
-input,
-textarea {
-	color: $page-color;
-
-	border: 2px solid lighten($bg-color-btn-second, 60);
-	background-color: $bg-header;
-	outline: none;
-
-	padding: 0.625em;
-
-	display: block;
-	max-width: 100%;
-	width: 100%;
-
-	border-radius: $border-radius;
-
-	&:focus {
-		border-color: $hover-nav-color;
-	}
-}
-
-.info-map {
-    font-size: 70%;
-    position: absolute;
-    max-width: 220px;
-    text-align: left;
-    line-height: 1.5;
-    background: transparentize($bg-color-icon, .1);
-    color: $bg-color-page;
-    border-radius: $border-radius;
-    z-index: 100;
-    right: 10px;
-    top: 10px;
-
-    p {
-        padding: {
-            top: 0.5em;
-            left: 0.7em;
-            right: 0.7em;
-            bottom: 0.5em;
-        };
-    }
-
-    span {
-            color: $color-page-btn-light;
-    }
-}
-
-.wrapper-map {
-    height: 65vh;
-    width: 45vw;
-    max-width: 45em;
-    position: relative;
-    
-    .map {
-        z-index: 10;
-    }
-
-    .leaflet-container {
-        border-radius: $border-radius;
-    }
-}
-
-.svg-pin {
-    position: absolute;
-    top: 35%;
-    left: 45.5%;
-    z-index: 100;
-}
-
-.marker {
-    z-index: 100;
-}
-
-
-@media (max-width: 950px) {
-    .flex {
-        flex-direction: column;
-    }
+    margin: 1.5em 0 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
     .contact-form {
-        width: 55vw;
+        margin: 2.5em 2em;
+        text-align: left;
 
-        margin: {
-            top: 0;
-            bottom: 1em;
-            right: 0.5em;
-            left: 0.5em;
-        };
+        label {
+            font-size: 1.0625em;
+            display: block;
+            margin-bottom: 0.05em;
+            margin-top: 1.375em;
+        }
+
+        .btn {
+            margin: 0;
+            margin-top: 1.375em;
+        }
+    }
+
+    input,
+    textarea {
+        color: $page-color;
+
+        border: 2px solid lighten($bg-color-btn-second, 60);
+        background-color: $bg-header;
+        outline: none;
+
+        padding: 0.625em;
+
+        display: block;
+        max-width: 100%;
+        width: 100%;
+
+        border-radius: $border-radius;
+
+        &:focus {
+            border-color: $hover-nav-color;
+        }
+    }
+
+    .info-map {
+        font-size: 70%;
+        position: absolute;
+        max-width: 220px;
+        text-align: left;
+        line-height: 1.5;
+        background: transparentize($bg-color-icon, 0.1);
+        color: $bg-color-page;
+        border-radius: $border-radius;
+        z-index: 100;
+        right: 10px;
+        top: 10px;
+
+        p {
+            padding: {
+                top: 0.5em;
+                left: 0.7em;
+                right: 0.7em;
+                bottom: 0.5em;
+            }
+        }
+
+        span {
+            color: $color-page-btn-light;
+        }
     }
 
     .wrapper-map {
-        width: 55vw;
-    }
-    
-}
+        height: 65vh;
+        width: 45vw;
+        max-width: 45em;
+        position: relative;
 
-@media (max-width: 750px) {
-    .wrapper-map {
+        .map {
+            z-index: 10;
+        }
+
+        .leaflet-container {
+            border-radius: $border-radius;
+        }
+    }
+
+    .svg-pin {
+        position: absolute;
+        top: 35%;
+        left: 45.5%;
+        z-index: 100;
+    }
+
+    .marker {
+        z-index: 100;
+    }
+
+    @media (max-width: 950px) {
+        .contact {
+            flex-direction: column;
+        }
+
+        .contact-form {
+            width: 55vw;
+
+            margin: {
+                top: 0;
+                bottom: 1em;
+                right: 0.5em;
+                left: 0.5em;
+            }
+        }
+
+        .wrapper-map {
+            width: 55vw;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .wrapper-map {
             height: 55vh;
         }
-}
-
-@media (max-width: 600px) {    
-    .contact-form {
-        width: 80vw;
     }
 
-    .wrapper-map {
-        width: 80vw;
-        height: 40vh;
+    @media (max-width: 600px) {
+        .contact-form {
+            width: 80vw;
+        }
+
+        .wrapper-map {
+            width: 80vw;
+            height: 40vh;
+        }
     }
 }

@@ -8,7 +8,7 @@
     <div class="container-project">
       <article class="project fade-in-right">
         <figure>
-          <a href="/list/index.html" target="_blank"
+          <a @click.prevent="toList()" target="_blank"
             ><img
               class="box"
               src="../assets/img/img-project/list-min.jpg"
@@ -27,7 +27,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project fade-in-left">
         <figure>
           <a href="/hud-app-exp/index.html" target="_blank"
             ><img
@@ -84,6 +84,9 @@ export default {
     },
     toTunes() {
       window.location.href = '../assets/tunes/index.html'
+    },
+    toList() {
+      window.location.href = window.location.origin + '/list/index.html'
     },
   },
   components: { FooterView },

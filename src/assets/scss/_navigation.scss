@@ -1,55 +1,53 @@
-.nav-head {
+.navigation-scss {
     position: relative;
     background-color: $bg-header;
     overflow: hidden;
     z-index: 1000;
-}
 
-.navigation {
-    font-size: $link-font-size;
-    margin: 1em auto 1.5em;
-    padding: 0 1.05em;
-    display: inline-block;
-    text-transform: uppercase;
-
-    vertical-align: middle;
-    white-space: nowrap;
-    
-    a {
-        color: $page-color;
-        font-size: 1.1em;
-        font-weight: 800;
-        text-decoration: none;
-        position: relative;
-        border-radius: $border-radius;
-
-        padding: 0.575em 0.65em;
+    .navigation {
+        font-size: $link-font-size;
+        margin: 1em auto 1.5em;
+        padding: 0 1.05em;
         display: inline-block;
-        z-index: 20000;
 
-        &.router-link-exact-active {
-            color: $hover-nav-color;
-        }
+        vertical-align: middle;
+        white-space: nowrap;
 
-
-        span::before {
-            content: "";
-            display: block;
-            height: 0.1875em;
-            width: 0%;
-            bottom: 5px;
-            border-radius: $border-radius;
+        a {
+            color: $page-color;
+            font-size: 1.1em;
+            font-weight: 800;
+            text-decoration: none;
             position: relative;
-            background: $hover-nav-color;
-            transition: all ease-in-out 350ms;
-            -webkit-transition: all ease-in-out 350ms;
-            -moz-transition: all ease-in-out 350ms;
-            -ms-transition: all ease-in-out 350ms;
-            -o-transition: all ease-in-out 350ms;
-        }
+            border-radius: $border-radius;
 
-        span:hover::before {
-            width: 100%;
+            padding: 0.575em 0.65em;
+            display: inline-block;
+            z-index: 20000;
+
+            &.router-link-exact-active {
+                color: $hover-nav-color;
+            }
+
+            span::before {
+                content: "";
+                display: block;
+                height: 0.1875em;
+                width: 0%;
+                bottom: 5px;
+                border-radius: $border-radius;
+                position: relative;
+                background: $hover-nav-color;
+                transition: all ease-in-out 350ms;
+                -webkit-transition: all ease-in-out 350ms;
+                -moz-transition: all ease-in-out 350ms;
+                -ms-transition: all ease-in-out 350ms;
+                -o-transition: all ease-in-out 350ms;
+            }
+
+            span:hover::before {
+                width: 100%;
+            }
         }
     }
 }

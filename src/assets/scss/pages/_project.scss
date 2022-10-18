@@ -2,66 +2,67 @@
 // ------ PROJECT PAGE ------ //
 // ------              ------ //
 
-.project {
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    margin-bottom: 10rem;
-    padding: 1rem 0; 
-
-    p {
-        padding-bottom: 2rem;
-    }
-}
-
-.container-project {
-    max-width: 1070px;
-    margin: 0 auto;
-}
-
-.project {
-    margin-bottom: 4rem;
-}
-
-.project:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.project:last-of-type {
-    margin-bottom: 0;
-}
-
-.project h2 {
-    color: $page-color-sec;
-    text-shadow: 0.0825rem 0.0825rem 0.0625rem lighten($page-color-shadow, 10%);
-}
-
-.project figure {
-    flex: 7;
-}
-
-.project .purport {
-    flex: 3;
-    padding: 0 2rem;
-}
-
-.box {
-    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 8%), 0 2px 2px hsl(0deg 0% 0% / 8%),
-        0 4px 4px hsl(0deg 0% 0% / 8%), 0 8px 8px hsl(0deg 0% 0% / 8%),
-        0 16px 16px hsl(0deg 0% 0% / 8%);
-    border-radius: $border-radius;
-    border: 1px solid $border-color;
-}
-
-@media (max-width: 880px) {
+.project-view {
     .project {
-        font-size: 85%;
-    }
-}
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        margin-bottom: 10rem;
+        padding: 1rem 0;
 
-@media (max-width: 750px) {
+        p {
+            padding-bottom: 2rem;
+        }
+    }
+
+    .container-project {
+        max-width: 1070px;
+        margin: 0 auto;
+    }
+
     .project {
-        display: block;
+        margin-bottom: 4rem;
+    }
+
+    .project:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .project:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .project h2 {
+        color: $page-color-sec;
+        text-shadow: 0.0825rem 0.0825rem 0.0625rem lighten($page-color-shadow, 10%);
+    }
+
+    .project figure {
+        flex: 7;
+    }
+
+    .project .purport {
+        flex: 3;
+        padding: 0 2rem;
+    }
+
+    .box {
+        box-shadow: 0 1px 1px hsl(0deg 0% 0% / 8%), 0 2px 2px hsl(0deg 0% 0% / 8%), 0 4px 4px hsl(0deg 0% 0% / 8%),
+            0 8px 8px hsl(0deg 0% 0% / 8%), 0 16px 16px hsl(0deg 0% 0% / 8%);
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+    }
+
+    @media (max-width: 880px) {
+        .project {
+            font-size: 85%;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .project {
+            display: block;
+        }
     }
 }
