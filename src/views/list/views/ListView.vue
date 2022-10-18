@@ -35,11 +35,11 @@ import { ref, onMounted } from 'vue'
 
 import ListTrulo from '@/views/list/components/ListTrulo'
 import ListCreateForm from '@/views/list/components/ListCreateForm'
+import BackTo from '@/components/BackTo.vue'
 
 import { data } from '@/views/list/data'
 import { addNewList, editListName } from '@/views/list/lists'
 import { addNewCard, deleteCard, editCard } from '@/views/list/cards'
-import BackTo from '@/components/BackTo.vue'
 
 export default {
   components: {
