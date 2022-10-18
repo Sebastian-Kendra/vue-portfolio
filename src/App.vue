@@ -1,7 +1,7 @@
 <template>
   <div class="cursor"></div>
   <div id="app-container">
-    <header class="fade-in">
+    <header class="fade-in nav-head">
       <TheNavigation />
     </header>
 

@@ -1,7 +1,6 @@
-header {
+.nav-head {
     position: relative;
     background-color: $bg-header;
-    text-transform: uppercase;
     overflow: hidden;
     z-index: 1000;
 }
@@ -11,6 +10,7 @@ header {
     margin: 1em auto 1.5em;
     padding: 0 1.05em;
     display: inline-block;
+    text-transform: uppercase;
 
     vertical-align: middle;
     white-space: nowrap;
