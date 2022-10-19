@@ -7,7 +7,7 @@
       <transition-group
         name="list"
         tag="div"
-        class="sm:flex items-start w-screen px-4 py-10 overflow-x-auto"
+        class="flex-wrap sm:flex items-start w-screen px-4 py-10 overflow-x-auto"
       >
         <div
           v-if="overlay"

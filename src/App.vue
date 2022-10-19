@@ -1,9 +1,7 @@
 <template>
   <div class="cursor"></div>
   <div id="app-container">
-    <header class="fade-in nav-head">
-      <TheNavigation />
-    </header>
+    <TheNavigation />
 
     <main>
       <router-view />
@@ -17,9 +15,6 @@ import TheNavigation from './components/TheNavigation.vue'
 export default {
   components: {
     TheNavigation,
-  },
-  data() {
-    return {}
   },
   computed: {
     mobile() {

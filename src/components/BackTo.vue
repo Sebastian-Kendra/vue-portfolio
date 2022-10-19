@@ -1,10 +1,10 @@
 <template>
-  <a @click.prevent="toProjects()">
+  <router-link to="/projects">
     <div class="back-to">
       <img class="img-back-to" src="@/assets/img/backTo.svg" />
       <p>Späť</p>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>

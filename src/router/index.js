@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
 import ProjectView from '../views/ProjectView.vue'
 import ListView from '../views/list/views/ListView.vue'
+import TunesView from '../views/hudba/views/TunesView.vue'
 
 const routes = [
   {
@@ -21,9 +22,14 @@ const routes = [
     component: ProjectView,
   },
   {
-    path: '/list/index.html',
+    path: '/list',
     name: 'list',
     component: ListView,
+  },
+  {
+    path: '/tunes',
+    name: 'tunes',
+    component: TunesView,
   },
 ]
 

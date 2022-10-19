@@ -8,12 +8,12 @@
     <div class="container-project">
       <article class="project fade-in-right">
         <figure>
-          <a @click.prevent="toList()" target="_blank"
-            ><img
+          <router-link to="/list">
+            <img
               class="box"
               src="../assets/img/img-project/list-min.jpg"
               alt=""
-          /></a>
+          /></router-link>
         </figure>
         <div class="purport">
           <h2>Organizačny List</h2>
@@ -29,12 +29,12 @@
 
       <article class="project fade-in-left">
         <figure>
-          <a href="/hud-app-exp/index.html" target="_blank"
+          <router-link to="/tunes"
             ><img
               class="box"
               src="../assets/img/img-project/hudba-min.jpg"
               alt=""
-          /></a>
+          /></router-link>
         </figure>
         <div class="purport">
           <h2>Hudobna applikacia</h2>
@@ -83,10 +83,10 @@ export default {
       window.location.href = 'https://cwconstructionltd.com/'
     },
     toTunes() {
-      window.location.href = '../assets/tunes/index.html'
+      window.location.href = window.location.origin + '/tunes'
     },
     toList() {
-      window.location.href = window.location.origin + '/list/index.html'
+      window.location.href = window.location.origin + '/list'
     },
   },
   components: { FooterView },
