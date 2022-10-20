@@ -206,6 +206,7 @@ Remove the inheritance of text transform in Edge and Firefox.
 Correct the inability to style clickable types in iOS and Safari.
 */
 
+
     /**
 Remove the inner border and padding in Firefox.
 */
@@ -585,6 +586,12 @@ Add the correct display in Chrome and Safari.
     }
 
     @media (min-width: 350px) {
+        .list {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 0;
+            width: 23rem;
+        }
     }
 
     .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -758,10 +765,6 @@ Add the correct display in Chrome and Safari.
 
     .block {
         display: block;
-    }
-
-    .flex-wrap {
-        flex-wrap: wrap;
     }
 
     .flex {
@@ -1287,18 +1290,6 @@ Add the correct display in Chrome and Safari.
             border-radius: 1.5rem;
         }
 
-        .list {
-            margin-left: 1rem;
-            margin-right: 1rem;
-            width: 25rem;
-        }
-
-        .sm\:mx-4 {
-            width: 25rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
-
         .sm\:flex {
             display: flex;
         }
@@ -1322,6 +1313,11 @@ Add the correct display in Chrome and Safari.
 
         .sm\:m-0 {
             margin: 0;
+        }
+
+        .sm\:mx-4 {
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
 
         .sm\:mx-auto {
@@ -1359,7 +1355,7 @@ Add the correct display in Chrome and Safari.
         }
 
         .sm\:w-80 {
-            width: 25rem;
+            width: 20rem;
         }
 
         .sm\:-rotate-6 {
@@ -1369,27 +1365,12 @@ Add the correct display in Chrome and Safari.
         .sm\:skew-y-0 {
             --transform-skew-y: 0;
         }
-
-        .sm\:flex {
-            justify-content: center;
-        }
     }
 
-    @media (min-width: 400px) {
+    @media (min-width: 768px) {
         .list {
-            margin-left: 1rem;
-            margin-right: 1rem;
-            width: 19rem;
-        }
-
-        .sm\:mx-4 {
-            width: 19rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
-
-        .sm\:pr-8 {
-            padding-right: 0;
+            font-size: 90%;
+            width: 20rem;
         }
     }
 
