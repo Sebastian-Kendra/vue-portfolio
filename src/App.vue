@@ -1,8 +1,7 @@
 <template>
-  <div class="cursor"></div>
   <div id="app-container">
-    <TheNavigation />
-
+    <TheNavigation class="fade-in" />
+    <div class="cursor"></div>
     <main>
       <router-view />
     </main>
@@ -11,10 +10,14 @@
 
 <script>
 import TheNavigation from './components/TheNavigation.vue'
+// import { nextTick } from 'vue'
 
 export default {
   components: {
     TheNavigation,
+  },
+  data() {
+    return {}
   },
   computed: {
     mobile() {
@@ -23,7 +26,7 @@ export default {
   },
   mounted() {
     console.log()
-    this.cursor()
+    setTimeout(this.cursor(), 200)
   },
   methods: {
     detectMob() {

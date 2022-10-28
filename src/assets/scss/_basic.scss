@@ -103,8 +103,8 @@ aside {
     display: flex;
     align-items: center;
     padding: {
-        top: 0.725em;
-        bottom: 0.725em;
+        top: 0.425em;
+        bottom: 0.425em;
         left: 2rem;
     }
     font-size: 1rem;
@@ -112,7 +112,7 @@ aside {
     color: $bg-color-icon;
 
     .img-back-to {
-        width: 20px;
+        width: 25px;
     }
 }
 
