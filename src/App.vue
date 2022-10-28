@@ -10,7 +10,6 @@
 
 <script>
 import TheNavigation from './components/TheNavigation.vue'
-// import { nextTick } from 'vue'
 
 export default {
   components: {
@@ -59,6 +58,8 @@ export default {
 
           if (this.mobile === true) {
             cursor.style.setProperty('--display', 'none')
+          } else {
+            cursor.style.setProperty('--display', 'block')
           }
 
           return {

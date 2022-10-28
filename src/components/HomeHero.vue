@@ -5,11 +5,11 @@
       <h2>Front-end developer</h2>
 
       <div class="wrapper-btn">
-        <a href="/contact" class="contact-btn-link">
+        <router-link to="/contact" class="contact-btn-link">
           <button class="primary-btn btn">
             <p>Kontaktuj ma</p>
           </button>
-        </a>
+        </router-link>
         <a href="Sebastián-Kendra.pdf" download="">
           <button class="second-btn btn">
             <p>Stiahni životopis</p>
