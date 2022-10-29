@@ -1,41 +1,38 @@
-@import 'animate.css';
-@import 'animate.scss';
+@import "animate.css";
+@import "animate.scss";
 
 // ------ FONTS ------ //
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap");
 
 // ------ VARIABLES ------ //
-@import 'variables.scss';
+@import "variables.scss";
 
 // ------ PARALAX ------ //
-@import 'paralax-mixins.scss';
+@import "paralax-mixins.scss";
 
 // ------ BASIC ------ //
-@import 'basic.scss';
+@import "basic.scss";
 
 // ------ NAVIGATION ------ //
-@import 'navigation.scss';
+@import "navigation.scss";
 
 // ------ ABOUT ------ //
-@import 'pages/about.scss';
+@import "pages/about.scss";
 
 // ------ LOGOHOME ------ //
-@import 'logohome.scss';
+@import "logohome.scss";
 
 // ------ PROJECT ------ //
-@import 'pages/project.scss';
+@import "pages/project.scss";
 
 // ------ CONTACT PAGE ------ //
-@import 'pages/contact.scss';
-
-// ------ LIST ------ //
-@import 'pages/list.scss';
+@import "pages/contact.scss";
 
 // ------ BUTTONS ------ //
-@import 'buttons.scss';
+@import "buttons.scss";
 
 // ------ FOOTER ------ //
-@import 'footer.scss';
+@import "footer.scss";
 
 // ------ MEDIA ------ //
-@import 'media.scss';
+@import "media.scss";

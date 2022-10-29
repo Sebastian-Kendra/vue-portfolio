@@ -4,6 +4,14 @@
     :class="{ 'z-20': isPopped }"
     class="card relative"
   >
+    <div class="relative">
+      <button
+        class="rounded-full bg-opacity-70 absolute top-0 right-5"
+        @click.prevent="doPop"
+      >
+        ⚙️
+      </button>
+    </div>
     <CardImage :image="card.image" />
     <div class="p-3">
       <CardLabels :labels="card.labels" />
@@ -136,5 +144,22 @@ export default {
 .poppup-leave-to {
   opacity: 0;
   transform: translateX(-25%);
+}
+
+.rounded-full {
+  border: 1px solid #797979ba;
+  border-radius: 5px;
+  padding: 5px;
+  color: #e4e4e7;
+  margin-top: 5px;
+}
+
+.right-5 {
+  right: 5px;
+  background: #acacac6d;
+}
+
+.outline-none {
+  padding-right: 25px;
 }
 </style>

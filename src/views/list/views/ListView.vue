@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import '@/views/list/assets/list.scss'
 import { ref, onMounted } from 'vue'
 
 import ListTrulo from '@/views/list/components/ListTrulo'

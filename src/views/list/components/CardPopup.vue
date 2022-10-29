@@ -3,6 +3,41 @@
     class="w-40 ml-2 text-sm text-white font-semibold sm:absolute top-0 left-80 sm:m-0"
     id="popup"
   >
+    <li
+      class="flex"
+      @mouseenter="createLabelsButtsVisible = true"
+      @mouseleave="createLabelsButtsVisible = false"
+    >
+      <a
+        @click="emit('create-label')"
+        class="grid items-center px-3 py-2.5 mb-1.5 bg-black bg-opacity-60 hover:bg-opacity-100 rounded transform hover:translate-x-1 transition duration-75 ease-in"
+        href="#"
+      >
+        <svg class="w-4 h-4 mr-1.5" viewBox="0 0 20 20">
+          <path
+            class="fill-current"
+            d="M9.634,10.633c0.116,0.113,0.265,0.168,0.414,0.168c0.153,0,0.308-0.06,0.422-0.177l4.015-4.111c0.229-0.235,0.225-0.608-0.009-0.836c-0.232-0.229-0.606-0.222-0.836,0.009l-3.604,3.689L6.35,5.772C6.115,5.543,5.744,5.55,5.514,5.781C5.285,6.015,5.29,6.39,5.522,6.617L9.634,10.633z"
+          ></path>
+          <path
+            class="fill-current"
+            d="M17.737,9.815c-0.327,0-0.592,0.265-0.592,0.591v2.903H2.855v-2.903c0-0.327-0.264-0.591-0.591-0.591c-0.327,0-0.591,0.265-0.591,0.591V13.9c0,0.328,0.264,0.592,0.591,0.592h15.473c0.327,0,0.591-0.264,0.591-0.592v-3.494C18.328,10.08,18.064,9.815,17.737,9.815z"
+          ></path>
+        </svg>
+
+        <p>Create label</p>
+
+        <aside
+          v-if="createLabelsButtsVisible"
+          class="flex mb-1.5 create-labels items-center"
+        >
+          <span :class="`w-4 h-4 mr-2 bg-blue-400 rounded-full`"></span>
+          <span :class="`w-4 h-4 mr-2 bg-red-400 rounded-full`"></span>
+          <span :class="`w-4 h-4 mr-2 bg-yellow-400 rounded-full`"></span>
+          <span :class="`w-4 h-4 mr-2 bg-purple-400 rounded-full`"></span>
+          <span :class="`w-4 h-4 mr-2 bg-ping-400 rounded-full`"></span>
+        </aside>
+      </a>
+    </li>
     <li class="flex">
       <a
         @click="emit('start-edit')"
@@ -64,6 +99,8 @@
 </template>
 
 <script>
+import { reactive, toRefs } from 'vue'
+
 export default {
   props: {
     card: {
@@ -74,9 +111,10 @@ export default {
     },
   },
   setup(props, { emit }) {
-    const consol = () => {
-      console.log()
-    }
+    const state = reactive({
+      createLabelsButtsVisible: false,
+    })
+
     const deleteCard = () => {
       window.eventBus.emit('delete-card', {
         cardId: props.card.id,
@@ -87,8 +125,8 @@ export default {
       window.eventBus.emit('toggle-overlay', false)
     }
     return {
+      ...toRefs(state),
       emit,
-      consol,
       deleteCard,
     }
   },
