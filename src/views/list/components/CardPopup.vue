@@ -26,16 +26,18 @@
 
         <p>Create label</p>
 
-        <aside
-          v-if="createLabelsButtsVisible"
-          class="flex mb-1.5 create-labels items-center"
-        >
-          <span :class="`w-4 h-4 mr-2 bg-blue-400 rounded-full`"></span>
-          <span :class="`w-4 h-4 mr-2 bg-red-400 rounded-full`"></span>
-          <span :class="`w-4 h-4 mr-2 bg-yellow-400 rounded-full`"></span>
-          <span :class="`w-4 h-4 mr-2 bg-purple-400 rounded-full`"></span>
-          <span :class="`w-4 h-4 mr-2 bg-ping-400 rounded-full`"></span>
-        </aside>
+        <transition name="create-labels">
+          <aside
+            v-if="createLabelsButtsVisible"
+            class="flex mb-1.5 create-labels items-center"
+          >
+            <span :class="`w-4 h-4 mr-2 bg-blue-400 rounded-full`"></span>
+            <span :class="`w-4 h-4 mr-2 bg-red-400 rounded-full`"></span>
+            <span :class="`w-4 h-4 mr-2 bg-yellow-400 rounded-full`"></span>
+            <span :class="`w-4 h-4 mr-2 bg-purple-400 rounded-full`"></span>
+            <span :class="`w-4 h-4 mr-2 bg-ping-400 rounded-full`"></span>
+          </aside>
+        </transition>
       </a>
     </li>
     <li class="flex">
@@ -133,4 +135,15 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.create-labels-enter-active,
+.create-labels-leave-active {
+  transition: all 0.15s;
+}
+
+.create-labels-enter-from,
+.create-labels-leave-to {
+  opacity: 0;
+  transform: translateY(-25%);
+}
+</style>
