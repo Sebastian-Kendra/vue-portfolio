@@ -70,10 +70,6 @@ export default {
       })
     })
 
-    const consol = () => {
-      console.log('bu')
-    }
-
     return {
       lists,
       overlay,
@@ -81,7 +77,6 @@ export default {
       addNewCard,
       editListName,
       editCard,
-      consol,
     }
   },
 }
