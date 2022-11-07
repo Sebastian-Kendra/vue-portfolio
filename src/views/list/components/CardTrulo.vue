@@ -1,9 +1,5 @@
 <template>
-  <li
-    @contextmenu.prevent="doPop"
-    :class="{ 'z-20': isPopped }"
-    class="card relative"
-  >
+  <li :class="{ 'z-20': isPopped }" class="card relative">
     <div class="relative">
       <button
         class="rounded-full bg-opacity-70 absolute top-0 right-5"
@@ -115,15 +111,10 @@ export default {
       }
     }
 
-    const consol = () => {
-      console.log('bu')
-    }
-
     return {
       ...toRefs(state),
       doPop,
       undoPop,
-      consol,
       saveText,
       startEditing,
       selectCell,

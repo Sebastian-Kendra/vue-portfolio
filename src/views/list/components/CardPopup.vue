@@ -31,7 +31,10 @@
             v-if="createLabelsButtsVisible"
             class="flex mb-1.5 create-labels items-center"
           >
-            <span :class="`w-4 h-4 mr-2 bg-blue-400 rounded-full`"></span>
+            <span
+              @click="addLabel"
+              :class="`w-4 h-4 mr-2 bg-blue-400 rounded-full`"
+            ></span>
             <span :class="`w-4 h-4 mr-2 bg-red-400 rounded-full`"></span>
             <span :class="`w-4 h-4 mr-2 bg-yellow-400 rounded-full`"></span>
             <span :class="`w-4 h-4 mr-2 bg-purple-400 rounded-full`"></span>
@@ -115,7 +118,22 @@ export default {
   setup(props, { emit }) {
     const state = reactive({
       createLabelsButtsVisible: false,
+      color: '',
     })
+
+    const addLabel = (e) => {
+      console.log(e.target.attributes.class.nodeValue)
+      const test = e.target.attributes.class.nodeValue
+      if (test.includes('blue')) {
+        console.log('nasiel sa')
+      }
+      // color = e.target find aside bg color
+      //tu som skoncil --> prejst na homea vytvorenie funcionality
+      /*  window.eventBus.emit('label-comming', {
+        cardId: props.card.id,
+        listId: props.listId,
+      }) */
+    }
 
     const deleteCard = () => {
       window.eventBus.emit('delete-card', {
@@ -130,6 +148,7 @@ export default {
       ...toRefs(state),
       emit,
       deleteCard,
+      addLabel,
     }
   },
 }
