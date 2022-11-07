@@ -125,14 +125,16 @@ export default {
       console.log(e.target.attributes.class.nodeValue)
       const test = e.target.attributes.class.nodeValue
       if (test.includes('blue')) {
-        console.log('nasiel sa')
+        state.color = 'blue'
       }
+      console.log(state.color)
       // color = e.target find aside bg color
       //tu som skoncil --> prejst na homea vytvorenie funcionality
-      /*  window.eventBus.emit('label-comming', {
+      window.eventBus.emit('label-comming', {
         cardId: props.card.id,
         listId: props.listId,
-      }) */
+        color: state.color,
+      })
     }
 
     const deleteCard = () => {

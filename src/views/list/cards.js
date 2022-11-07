@@ -3,6 +3,23 @@
  * @param {array} lists
  **/
 
+export const addNewLabel = (data, lists) => {
+  if (!data.color) return
+
+  let listForNewCard = lists.find((list) => list.id === data.listId)
+
+  console.log(listForNewCard)
+
+  listForNewCard.cards.labels.push({
+    color: data.color,
+  })
+}
+
+/**
+ * @param {object} data
+ * @param {array} lists
+ **/
+
 export const addNewCard = (data, lists) => {
   if (!data.text) return
 

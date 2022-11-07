@@ -40,7 +40,12 @@ import BackTo from '@/components/BackTo.vue'
 
 import { data } from '@/views/list/data'
 import { addNewList, editListName } from '@/views/list/lists'
-import { addNewCard, deleteCard, editCard } from '@/views/list/cards'
+import {
+  addNewCard,
+  deleteCard,
+  editCard,
+  addNewLabel,
+} from '@/views/list/cards'
 
 export default {
   components: {
@@ -53,6 +58,10 @@ export default {
     const overlay = ref(false)
 
     onMounted(() => {
+      window.eventBus.on('label-comming', (event) => {
+        addNewLabel(event, lists.value)
+      })
+
       window.eventBus.on('new-card', (event) => {
         addNewCard(event, lists.value)
       })
@@ -75,6 +84,7 @@ export default {
       overlay,
       addNewList,
       addNewCard,
+      addNewLabel,
       editListName,
       editCard,
     }
