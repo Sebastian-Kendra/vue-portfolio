@@ -15,8 +15,9 @@ export const addNewLabel = (data, lists) => {
     Object.assign(CardForNewLabel, { labels: [] })
   }
 
-  if (CardForNewLabel.labels.length < 6)
-    return CardForNewLabel.labels.push(data.color)
+  if (CardForNewLabel.labels.length < 6) {
+    CardForNewLabel.labels.push(data.color)
+  }
 }
 
 /**
