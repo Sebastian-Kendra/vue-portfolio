@@ -6,7 +6,7 @@ export const data = [
       {
         id: 1,
         text: 'Ten bol očividne prvý pretože ked niečo niekto svtvori musí sa vediet kto tu bol hneď keď ho stvoril',
-        labels: ['green'],
+        labels: ['green', 'blue'],
         tags: ['first', 'card'],
       },
       { id: 2, text: 'Preplávem aj plávajucú podlahu' },

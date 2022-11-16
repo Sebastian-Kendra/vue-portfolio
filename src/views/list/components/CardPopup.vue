@@ -35,10 +35,22 @@
               @click="addLabel"
               :class="`w-4 h-4 mr-2 bg-blue-400 rounded-full`"
             ></span>
-            <span :class="`w-4 h-4 mr-2 bg-red-400 rounded-full`"></span>
-            <span :class="`w-4 h-4 mr-2 bg-yellow-400 rounded-full`"></span>
-            <span :class="`w-4 h-4 mr-2 bg-purple-400 rounded-full`"></span>
-            <span :class="`w-4 h-4 mr-2 bg-ping-400 rounded-full`"></span>
+            <span
+              @click="addLabel"
+              :class="`w-4 h-4 mr-2 bg-red-400 rounded-full`"
+            ></span>
+            <span
+              @click="addLabel"
+              :class="`w-4 h-4 mr-2 bg-yellow-400 rounded-full`"
+            ></span>
+            <span
+              @click="addLabel"
+              :class="`w-4 h-4 mr-2 bg-purple-400 rounded-full`"
+            ></span>
+            <span
+              @click="addLabel"
+              :class="`w-4 h-4 mr-2 bg-ping-400 rounded-full`"
+            ></span>
           </aside>
         </transition>
       </a>
@@ -122,14 +134,18 @@ export default {
     })
 
     const addLabel = (e) => {
-      console.log(e.target.attributes.class.nodeValue)
-      const test = e.target.attributes.class.nodeValue
-      if (test.includes('blue')) {
+      const colorTarget = e.target.attributes.class.nodeValue
+      if (colorTarget.includes('blue')) {
         state.color = 'blue'
+      } else if (colorTarget.includes('red')) {
+        state.color = 'red'
+      } else if (colorTarget.includes('yellow')) {
+        state.color = 'yellow'
+      } else if (colorTarget.includes('purple')) {
+        state.color = 'purple'
+      } else if (colorTarget.includes('ping')) {
+        state.color = 'ping'
       }
-      console.log(state.color)
-      // color = e.target find aside bg color
-      //tu som skoncil --> prejst na homea vytvorenie funcionality
       window.eventBus.emit('label-comming', {
         cardId: props.card.id,
         listId: props.listId,

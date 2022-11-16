@@ -4,15 +4,19 @@
  **/
 
 export const addNewLabel = (data, lists) => {
-  if (!data.color) return
+  if (!data.color || !data?.cardId || !data?.listId) return
 
-  let listForNewCard = lists.find((list) => list.id === data.listId)
+  let ListForNewLabel = lists.find((list) => list.id === data.listId)
+  var CardForNewLabel = ListForNewLabel.cards.find(
+    (card) => card.id === data.cardId
+  )
 
-  console.log(listForNewCard)
+  if (!Object.prototype.hasOwnProperty.call(CardForNewLabel, 'labels')) {
+    Object.assign(CardForNewLabel, { labels: [] })
+  }
 
-  listForNewCard.cards.labels.push({
-    color: data.color,
-  })
+  if (CardForNewLabel.labels.length < 6)
+    return CardForNewLabel.labels.push(data.color)
 }
 
 /**
