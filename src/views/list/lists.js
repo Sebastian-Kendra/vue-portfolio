@@ -7,12 +7,18 @@ export const addNewList = (name, lists) => {
   if (!name) return
 
   let listMaxId = lists.length ? Math.max(...lists.map((list) => list.id)) : 0
+  let listMaxList = lists.length
+    ? Math.max(...lists.map((list) => list.list))
+    : 0
 
   lists.push({
     id: listMaxId + 1,
+    list: listMaxList + 1,
     name: name,
     cards: [],
   })
+
+  console.log(lists)
 }
 
 /**

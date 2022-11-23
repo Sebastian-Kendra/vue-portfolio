@@ -2,6 +2,7 @@ export const data = [
   {
     id: 1,
     name: 'Zas dačo',
+    list: 1,
     cards: [
       {
         id: 1,
@@ -30,6 +31,7 @@ export const data = [
   {
     id: 2,
     name: 'Tipy a triky',
+    list: 2,
     cards: [
       { id: 1, text: 'Bez dalších otázok', labels: ['yellow', 'green'] },
       {
@@ -43,6 +45,7 @@ export const data = [
   {
     id: 3,
     name: 'Múdrosti',
+    list: 3,
     cards: [
       {
         id: 1,
