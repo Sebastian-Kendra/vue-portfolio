@@ -17,8 +17,6 @@ export const addNewList = (name, lists) => {
     name: name,
     cards: [],
   })
-
-  console.log(lists)
 }
 
 /**

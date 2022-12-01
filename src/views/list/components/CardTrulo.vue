@@ -59,7 +59,6 @@ export default {
       type: Number,
     },
   },
-  // eslint-disable-next-line no-unused-vars
   setup(props) {
     const state = reactive({
       isPopped: false,

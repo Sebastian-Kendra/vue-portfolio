@@ -2,22 +2,24 @@ export const data = [
   {
     id: 1,
     name: 'Zas dačo',
-    list: 1,
     cards: [
       {
         id: 1,
+        list: 1,
         text: 'Ten bol očividne prvý pretože ked niečo niekto svtvori musí sa vediet kto tu bol hneď keď ho stvoril',
         labels: ['green', 'blue'],
         tags: ['first', 'card'],
       },
-      { id: 2, text: 'Preplávem aj plávajucú podlahu' },
+      { id: 2, list: 1, text: 'Preplávem aj plávajucú podlahu' },
       {
         id: 3,
+        list: 1,
         text: 'Ak si nevedel tak už vieš',
         labels: ['blue', 'green', 'purple'],
       },
       {
         id: 4,
+        list: 1,
         text: 'Chod do obchodu prejdi sa (autom)',
         image: {
           filename: 'Auto.jpg',
@@ -31,24 +33,30 @@ export const data = [
   {
     id: 2,
     name: 'Tipy a triky',
-    list: 2,
+
     cards: [
-      { id: 1, text: 'Bez dalších otázok', labels: ['yellow', 'green'] },
+      {
+        id: 1,
+        list: 2,
+        text: 'Bez dalších otázok',
+        labels: ['yellow', 'green'],
+      },
       {
         id: 2,
+        list: 2,
         text: 'Ak si hladný tak sa najedz',
         labels: ['red', 'red', 'blue'],
       },
-      { id: 3, text: 'Neprišiel mi obed ešte čo si jak' },
+      { id: 3, list: 2, text: 'Neprišiel mi obed ešte čo si jak' },
     ],
   },
   {
     id: 3,
     name: 'Múdrosti',
-    list: 3,
     cards: [
       {
         id: 1,
+        list: 3,
         text: 'Dievča + Chlapec = Kaviareň',
         labels: ['red', 'ping', 'ping', 'ping', 'red'],
         tags: ['👄', '🥰', '💍', '❤️'],
@@ -57,9 +65,9 @@ export const data = [
           alt: 'Dievča a chlapec',
         },
       },
-      { id: 2, text: 'Ak nevieš o čom to je tak si to pozri' },
-      { id: 3, text: 'Naučíš sa niečo tak to budeš vedieť' },
-      { id: 5, text: 'Ak už to vieš tak sa to učiť nemusíš' },
+      { id: 2, list: 3, text: 'Ak nevieš o čom to je tak si to pozri' },
+      { id: 3, list: 3, text: 'Naučíš sa niečo tak to budeš vedieť' },
+      { id: 4, list: 3, text: 'Ak už to vieš tak sa to učiť nemusíš' },
     ],
   },
 ]

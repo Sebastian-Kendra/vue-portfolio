@@ -22,6 +22,10 @@
           :key="list.id"
           :name="list.name"
           @edit-list-name="editListName($event, lists)"
+          class="drop-zone"
+          @drop="onDrop($event, list.id)"
+          @dragover.prevent
+          @dragenter.prevent
         />
 
         <ListCreateForm @new-list="addNewList($event, lists)" key="0" />
@@ -56,10 +60,41 @@ export default {
   setup() {
     const lists = ref(data)
     const overlay = ref(false)
+    let /* movingId = '', */
+      movingText = '',
+      movingLabels = [],
+      movingTags = [],
+      movingImage = {}
+
+    //TOTO JE AKOKEBY LISENER
+    const onDrop = (evt, listId) => {
+      window.eventBus.emit('card-dropt', listId)
+
+      let listForDrop = lists.value.find((list) => list.id === listId)
+      let cardMaxId = listForDrop.cards.length
+        ? Math.max(...listForDrop.cards.map((card) => card.id))
+        : 0
+
+      listForDrop.cards.push({
+        id: cardMaxId + 1,
+        text: movingText,
+        labels: movingLabels,
+        tags: movingTags,
+        image: movingImage,
+      })
+    }
 
     onMounted(() => {
       window.eventBus.on('label-comming', (event) => {
         addNewLabel(event, lists.value)
+      })
+
+      window.eventBus.on('card-moving', (event) => {
+        ;(movingText = event.textCard),
+          (movingLabels = event.cardLabels),
+          (movingTags = event.tagsCard),
+          (movingImage = event.imageCard)
+        deleteCard(event, lists.value)
       })
 
       window.eventBus.on('new-card', (event) => {
@@ -87,6 +122,7 @@ export default {
       addNewLabel,
       editListName,
       editCard,
+      onDrop,
     }
   },
 }

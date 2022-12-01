@@ -21,6 +21,9 @@
         :key="card.id"
         :card="card"
         :listId="id"
+        class="drag-el"
+        draggable="true"
+        @dragstart="startDrag($event, card)"
       />
     </transition-group>
 
@@ -74,6 +77,21 @@ export default {
       })
     }
 
+    //TOTO JE AKOKEBY LISENER KED NASTANE DRAG START
+    const startDrag = (evt, card) => {
+      evt.dataTransfer.dropEffect = 'move'
+      evt.dataTransfer.effectAllowed = 'move'
+      evt.dataTransfer.setData('item', card)
+      window.eventBus.emit('card-moving', {
+        cardId: card.id,
+        cardLabels: card.labels,
+        tagsCard: card.tags,
+        textCard: card.text,
+        imageCard: card.image,
+        listId: props.id,
+      })
+    }
+
     const selectCell = () => {
       let cell = headline.value
       let range, selection
@@ -97,6 +115,7 @@ export default {
       selectCell,
       saveName,
       headline,
+      startDrag,
     }
   },
 }
