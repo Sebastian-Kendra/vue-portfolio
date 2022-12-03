@@ -132,4 +132,10 @@ export default {
   opacity: 0;
   transform: scale(0.75);
 }
+
+.drag-el.dragging {
+  background-color: navy;
+  border-radius: 50%;
+  opacity: 1;
+}
 </style>

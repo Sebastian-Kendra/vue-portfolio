@@ -1,7 +1,13 @@
 <template>
-  <li :class="{ 'z-20': isPopped }" class="card relative">
+  <li
+    :class="{ 'z-20': isPopped }"
+    class="card relative"
+    @mouseenter="visible = true"
+    @mouseleave="visible = false"
+  >
     <div class="relative">
       <button
+        v-show="visible"
         class="rounded-full bg-opacity-70 absolute top-0 right-5"
         @click.prevent="doPop"
       >
@@ -63,6 +69,7 @@ export default {
     const state = reactive({
       isPopped: false,
       isEditing: false,
+      visible: false,
     })
 
     const doPop = () => {

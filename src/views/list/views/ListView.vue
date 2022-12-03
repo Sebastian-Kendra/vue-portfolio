@@ -60,13 +60,11 @@ export default {
   setup() {
     const lists = ref(data)
     const overlay = ref(false)
-    let /* movingId = '', */
-      movingText = '',
+    let movingText = '',
       movingLabels = [],
       movingTags = [],
       movingImage = {}
 
-    //TOTO JE AKOKEBY LISENER
     const onDrop = (evt, listId) => {
       window.eventBus.emit('card-dropt', listId)
 
@@ -77,11 +75,13 @@ export default {
 
       listForDrop.cards.push({
         id: cardMaxId + 1,
-        text: movingText,
-        labels: movingLabels,
-        tags: movingTags,
+        text: movingText || '',
+        labels: movingLabels || [],
+        tags: movingTags || [],
         image: movingImage,
       })
+
+      console.log(listForDrop.cards)
     }
 
     onMounted(() => {
