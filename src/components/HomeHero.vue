@@ -12,7 +12,7 @@
         </router-link>
         <a href="Sebastián-Kendra.pdf" download="">
           <button class="second-btn btn">
-            <p>Stiahni životopis</p>
+            <p>Stiahnuť životopis</p>
           </button>
         </a>
       </div>

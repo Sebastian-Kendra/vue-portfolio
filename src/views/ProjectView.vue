@@ -8,7 +8,7 @@
     <div class="container-project">
       <article class="project fade-in-right">
         <figure>
-          <router-link to="/list">
+          <router-link to="/projects/list">
             <img
               class="box"
               src="../assets/img/img-project/list-min.jpg"
@@ -29,7 +29,7 @@
 
       <article class="project fade-in-left">
         <figure>
-          <router-link to="/tunes"
+          <router-link to="/projects/tunes"
             ><img
               class="box"
               src="../assets/img/img-project/hudba-min.jpg"
