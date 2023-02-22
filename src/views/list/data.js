@@ -1,16 +1,16 @@
 export const data = [
   {
     id: 1,
-    name: 'Zas dačo',
+    name: 'Zasa niečo',
     cards: [
       {
         id: 1,
         list: 1,
-        text: 'Ten bol očividne prvý pretože ked niečo niekto svtvori musí sa vediet kto tu bol hneď keď ho stvoril',
+        text: 'Ten bol očividne prvý, pretože keď niečo niekto vytvorí musí sa vedieť kto tu bol hneď, keď ho vytvoril',
         labels: ['green', 'blue'],
         tags: ['first', 'card'],
       },
-      { id: 2, list: 1, text: 'Preplávem aj plávajucú podlahu' },
+      { id: 2, list: 1, text: 'Preplávam aj plávajúcu podlahu' },
       {
         id: 3,
         list: 1,
@@ -20,7 +20,7 @@ export const data = [
       {
         id: 4,
         list: 1,
-        text: 'Chod do obchodu prejdi sa (autom)',
+        text: 'Choď do obchodu prejdi sa (autom)',
         image: {
           filename: 'Auto.jpg',
           alt: 'Auto',
@@ -38,7 +38,7 @@ export const data = [
       {
         id: 1,
         list: 2,
-        text: 'Bez dalších otázok',
+        text: 'Bez ďalších otázok',
         labels: ['yellow', 'green'],
       },
       {
@@ -47,7 +47,7 @@ export const data = [
         text: 'Ak si hladný tak sa najedz',
         labels: ['red', 'red', 'blue'],
       },
-      { id: 3, list: 2, text: 'Neprišiel mi obed ešte čo si jak' },
+      { id: 3, list: 2, text: 'Neprišiel mi obed ešte, čo si jak' },
     ],
   },
   {
