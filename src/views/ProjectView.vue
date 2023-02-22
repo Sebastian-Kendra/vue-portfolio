@@ -41,9 +41,9 @@
           <h3>Pusť si hudbu a v komponente</h3>
           <br />
           <p>
-            Hudobná aplikácia bola písaná v javascripte tvorená Vue 3 použité
-            bolo optional API. Aplikácia dokáže prehľadávať v externom API
-            vytiahnuť dáta a zobratiť v podobe komponentu.
+            Hudobná aplikácia bola písaná v javascripte, tvorená vo Vue 3
+            použité bolo optional API. Aplikácia dokáže prehľadávať v externom
+            API vytiahnuť dáta a zobratiť v podobe komponentu.
           </p>
         </div>
       </article>
@@ -62,9 +62,9 @@
           <h3>Informačná stránka</h3>
           <br />
           <p>
-            Webová stránka robená na požiadavky a podľa predstavy zahraničného
-            klienta. Vo všeobecnosti statický web až na celostranové rolovanie,
-            ktoré zabezpečuje javascript.
+            Webová stránka vytvorená na požiadavky a podľa predstavy
+            zahraničného klienta. Vo všeobecnosti statický web až na
+            celostranové rolovanie, ktoré zabezpečuje javascript.
           </p>
         </div>
       </article>
