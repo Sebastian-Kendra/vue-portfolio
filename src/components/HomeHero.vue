@@ -7,12 +7,12 @@
       <div class="wrapper-btn">
         <router-link to="/contact" class="contact-btn-link">
           <button class="primary-btn btn">
-            <p>Kontaktuj ma</p>
+            <p>Kontaktujte ma</p>
           </button>
         </router-link>
         <a href="Sebastián-Kendra.pdf" download="">
           <button class="second-btn btn">
-            <p>Stiahni životopis</p>
+            <p>Stiahnuť životopis</p>
           </button>
         </a>
       </div>

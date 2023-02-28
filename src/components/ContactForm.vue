@@ -34,7 +34,7 @@
         cols="40"
         rows="10"
       ></textarea>
-      <input type="submit" class="btn second-btn submit-btn" value="SEND" />
+      <input type="submit" class="btn second-btn submit-btn" value="ODOSLAŤ" />
     </form>
   </div>
 </template>

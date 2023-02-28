@@ -29,7 +29,7 @@
       <p class="footer-company-about">
         <span>Sebastián Kendra</span>
       </p>
-      <p class="footer-shadow">Najdete ma aj na</p>
+      <p class="footer-shadow">Nájdete ma aj na</p>
       <div class="footer-icons">
         <a href="https://www.facebook.com/SebkOo"
           ><i class="fa fa-facebook" aria-hidden="true"></i

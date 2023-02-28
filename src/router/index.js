@@ -22,12 +22,12 @@ const routes = [
     component: ProjectView,
   },
   {
-    path: '/list',
+    path: '/projects/list',
     name: 'list',
     component: ListView,
   },
   {
-    path: '/tunes',
+    path: '/projects/tunes',
     name: 'tunes',
     component: TunesView,
   },

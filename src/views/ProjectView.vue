@@ -8,7 +8,7 @@
     <div class="container-project">
       <article class="project fade-in-right">
         <figure>
-          <router-link to="/list">
+          <router-link to="/projects/list">
             <img
               class="box"
               src="../assets/img/img-project/list-min.jpg"
@@ -16,20 +16,20 @@
           /></router-link>
         </figure>
         <div class="purport">
-          <h2>Organizačny List</h2>
+          <h2>Organizačný List</h2>
           <h3>Vytvor si list a kartu</h3>
           <br />
           <p>
-            Pri tvorbe organizačneho listu bol použity framework Vue 3.
-            Vytvorene komponenty boli pisane spôsobom composition API. Bol
-            použity jazyk javascript.
+            Pri tvorbe organizačného listu bol použitý framework Vue 3.
+            Vytvorené komponenty boli písané spôsobom composition API. Bol
+            použitý jazyk javascript.
           </p>
         </div>
       </article>
 
       <article class="project fade-in-left">
         <figure>
-          <router-link to="/tunes"
+          <router-link to="/projects/tunes"
             ><img
               class="box"
               src="../assets/img/img-project/hudba-min.jpg"
@@ -37,13 +37,13 @@
           /></router-link>
         </figure>
         <div class="purport">
-          <h2>Hudobna applikacia</h2>
-          <h3>Pusti si hudbu a v komponente</h3>
+          <h2>Hudobná aplikácia</h2>
+          <h3>Pusť si hudbu a v komponente</h3>
           <br />
           <p>
-            Hudobna aplikacia bola pisana v javascripte tvorena Vue 3 použite
-            bolo optional API. Aplikacia dokaze prehladavat v externom API
-            vytiahnut data a zobratit v podobe komponentu.
+            Hudobná aplikácia bola písaná v javascripte, tvorená vo Vue 3
+            použité bolo optional API. Aplikácia dokáže prehľadávať v externom
+            API vytiahnuť dáta a zobratiť v podobe komponentu.
           </p>
         </div>
       </article>
@@ -59,12 +59,12 @@
         </figure>
         <div class="purport">
           <h2>Color world construction LTD</h2>
-          <h3>Informačna stranka</h3>
+          <h3>Informačná stránka</h3>
           <br />
           <p>
-            Webova stranka robena na poziadavky a podla predstavy zahraničneho
-            klienta. Vo všeobecnosti staticky web až na celostranove rolovanie
-            ktore zabespečuje javascript.
+            Webová stránka vytvorená na požiadavky a podľa predstavy
+            zahraničného klienta. Vo všeobecnosti statický web až na
+            celostranové rolovanie, ktoré zabezpečuje javascript.
           </p>
         </div>
       </article>
