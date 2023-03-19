@@ -1,7 +1,13 @@
 <template>
   <footer class="footer-view">
     <div class="footer-left">
-      <img src="img/Logo-sk.png" alt="" width="150" height="100" />
+      <img
+        src="img/logo.svg"
+        alt=""
+        width="50"
+        height="25"
+        class="footer-logo"
+      />
       <p class="footer-links">
         <a href="/">O mne</a> · <a href="/projects">Projeky</a> ·
         <a href="/contact">Kontakt</a>
