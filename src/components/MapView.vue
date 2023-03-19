@@ -38,7 +38,7 @@ export default {
     return {
       zoom: 6,
       icon: icon({
-        iconUrl: 'img/location-pin-solid-ico-v-logo.svg',
+        iconUrl: 'img/location-pin-solid-ico-v-logo-v2.svg',
         iconSize: [80, 64],
         iconAnchor: [40, 64],
       }),
