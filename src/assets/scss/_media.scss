@@ -25,6 +25,10 @@
         display: block;
     }
 
+        .project-view .project {
+            margin-bottom: 2rem;
+        }
+
     .contact .info-map {
         display: none;
     }
@@ -61,6 +65,10 @@
         height: 300px;
         margin-top: 2em;
     }
+
+        .project-view .project {
+            margin-bottom: 2rem;
+        }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -73,6 +81,10 @@
         display: block;
         margin-bottom: 1.2rem;
     }
+
+        .project-view .project {
+            margin-bottom: 4rem;
+        }
 
         .contact-container {
             padding: 0;
