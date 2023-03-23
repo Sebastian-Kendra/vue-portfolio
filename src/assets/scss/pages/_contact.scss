@@ -2,6 +2,11 @@
 // ------ CONTACT PAGE ------ //
 // ------              ------ //
 
+.contact-container {
+    max-width: 1270px;
+        margin: 0 auto;
+}
+
 .contact {
     width: 100%;
     display: flex;
@@ -31,7 +36,7 @@
         }
 
         .btn {
-            font-size: 1rem;
+            font-size: 0.7rem;
             margin: 0;
             margin-top: 1.375em;
         }

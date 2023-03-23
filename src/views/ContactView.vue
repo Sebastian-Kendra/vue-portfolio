@@ -1,9 +1,11 @@
 <template>
-  <div class="contact flex">
-    <ContactForm class="fade-in-left" />
-    <MapView class="fade-in-right" />
+  <div class="contact-container">
+    <div class="contact flex">
+      <ContactForm class="fade-in-left" />
+      <MapView class="fade-in-right" />
+    </div>
+    <FooterView />
   </div>
-  <FooterView />
 </template>
 
 <script>

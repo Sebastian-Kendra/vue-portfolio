@@ -1,11 +1,11 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     html {
-        font-size: 88%;
+        font-size: 75%;
     }
 
     .wrapper-logo-svg .logo-svg {
-        width: 45%;
+        width: 72%;
     }
 
     h1,
@@ -41,7 +41,7 @@
     }
 
     .wrapper-logo-svg .logo-svg {
-        width: 70%;
+        width: 77%;
     }
 
     h1,
@@ -65,10 +65,18 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .wrapper-logo-svg .logo-svg {
+            width: 87%;
+        }
+
     .about-me .line {
         display: block;
         margin-bottom: 1.2rem;
     }
+
+        .contact-container {
+            padding: 0;
+        }
 
     .contact {
         .form-wrapper {
@@ -95,9 +103,14 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .wrapper-logo-svg .logo-svg {
+            width: 95%;
+            margin-right: 2rem;
+        }
+
     .contact {
         .form-wrapper {
-            margin-right: 2rem;
+            margin-left: 1rem;
         }
 
         .wrapper-map {
@@ -113,10 +126,15 @@
         font-size: 100%;
     }
 
+        .wrapper-logo-svg .logo-svg {
+            width: 105%;
+            margin-left: 4rem;
+        }
+
     .contact {
         .wrapper-map {
             height: 491px;
-            max-width: 610px;
+            max-width: 760px;
         }
     }
 }
