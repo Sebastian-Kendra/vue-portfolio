@@ -1,10 +1,6 @@
 <template>
   <div class="project-view container">
     <h1 class="fade-in-down">Projekty</h1>
-    <!-- 
-    <div class="parallax">
-      <div class="parallax__layer parallax__layer--back">...</div>
-      <div class="parallax__layer parallax__layer--base">...</div> -->
     <div class="container-project">
       <article class="project fade-in-right">
         <figure>
