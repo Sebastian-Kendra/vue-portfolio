@@ -5,7 +5,7 @@
     }
 
     .wrapper-logo-svg .logo-svg {
-        width: 90%;
+        width: 45%;
     }
 
     h1,
@@ -28,6 +28,10 @@
     .contact .info-map {
         display: none;
     }
+
+    .footer-center {
+        text-align: left;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -37,7 +41,7 @@
     }
 
     .wrapper-logo-svg .logo-svg {
-        width: 90%;
+        width: 70%;
     }
 
     h1,
