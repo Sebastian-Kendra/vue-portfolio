@@ -14,8 +14,8 @@
 
     .hero {
         margin: {
-            right: 4em;
-            left: 2em;
+            /* right: 4em;
+            left: 2em;*/
         }
         display: flex;
         flex-direction: column;
@@ -51,39 +51,10 @@
 
         p {
             padding: {
-                top: 1.2em;
+                /* top: 1.2em;
                 bottom: 1.2em;
                 right: 12em;
-                left: 12em;
-            }
-        }
-    }
-
-    @media (max-width: 1270px) {
-        .about-me {
-            max-width: 48.5em;
-            p {
-                padding: {
-                    right: 3em;
-                    left: 3em;
-                }
-            }
-        }
-    }
-
-    @media (max-width: 900px) {
-        .about-me {
-            max-width: 60vw;
-        }
-    }
-
-    @media (max-width: 900px) {
-        .about-me {
-            p {
-                padding: {
-                    right: 0.5em;
-                    left: 0.5em;
-                }
+                left: 12em; */
             }
         }
     }

@@ -1,22 +1,118 @@
-@media (max-width: 992px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     html {
-        font-size: 95%;
+        font-size: 88%;
+    }
+
+    .wrapper-logo-svg .logo-svg {
+        width: 90%;
+    }
+
+    h1,
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
     }
 
     .about-me .line {
         display: none;
     }
-}
 
-@media (max-width: 768px) {
-    html {
-        font-size: 90%;
+    .project {
+        display: block;
     }
 
-    .wrapper-logo-svg {
-        margin: {
-            right: 1.7em;
-            left: 1.7em;
+    .contact .info-map {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 92%;
+    }
+
+    .wrapper-logo-svg .logo-svg {
+        width: 90%;
+    }
+
+    h1,
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-me .line {
+        display: none;
+    }
+
+    .contact .wrapper-map {
+        height: 300px;
+        margin-top: 2em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .about-me .line {
+        display: block;
+        margin-bottom: 1.2rem;
+    }
+
+    .contact {
+        .form-wrapper {
+            max-width: 300px;
+            margin-right: 1rem;
+        }
+
+        .wrapper-map {
+            max-width: 400px;
+            height: 444px;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 875px and up)  */
+@media only screen and (min-width: 875px) {
+    .contact {
+        .form-wrapper {
+            max-width: 350px;
+            margin-right: 1rem;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .contact {
+        .form-wrapper {
+            margin-right: 2rem;
+        }
+
+        .wrapper-map {
+            height: 447px;
+            max-width: 550px;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 100%;
+    }
+
+    .contact {
+        .wrapper-map {
+            height: 491px;
+            max-width: 610px;
         }
     }
 }

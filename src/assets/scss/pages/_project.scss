@@ -54,12 +54,6 @@
         border: 1px solid $border-color;
     }
 
-    @media (max-width: 880px) {
-        .project {
-            font-size: 85%;
-        }
-    }
-
     @media (max-width: 750px) {
         .project {
             display: block;
