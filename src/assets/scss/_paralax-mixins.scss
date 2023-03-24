@@ -1,14 +1,11 @@
 // Magic parallax mixins
 
-$parallax-perspective : 1 !default;
-$parallax-element : "body" !default;
-$parallax-ios : true !default;
+$parallax-perspective: 1 !default;
+$parallax-element: "body" !default;
+$parallax-ios: true !default;
 
-@mixin parallax-init($perspective : $parallax-perspective,
-    $element : $parallax-element,
-    $parallax-ios : $parallax-ios ) {
-    @if $element =="body" {
-
+@mixin parallax-init($perspective: $parallax-perspective, $element: $parallax-element, $parallax-ios: $parallax-ios) {
+    @if $element == "body" {
         html,
         body {
             width: 100%;
@@ -37,9 +34,7 @@ $parallax-ios : true !default;
     }
 }
 
-@mixin parallax($distance : 0,
-    $perspective : $parallax-perspective ) {
-    transform:
-        translateZ($distance * $perspective * 1px) scale(abs($distance - 1));
+@mixin parallax($distance: 0, $perspective: $parallax-perspective) {
+    transform: translateZ($distance * $perspective * 1px) scale(abs($distance - 1));
     z-index: $distance * 1000;
 }

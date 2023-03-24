@@ -5,12 +5,12 @@
     font-size: $link-font-size;
     font-family: $page-font;
     font-weight: 700;
-    letter-spacing: .02rem;
-    margin: 0.55em 0.7em ;
+    letter-spacing: 0.02rem;
+    margin: 0.55em 0.7em;
     text-align: center;
     text-transform: uppercase;
     background-size: 200% auto;
-    border-color: rgba(255, 255, 255, 0); /// žiadna resp. priehliadna 
+    border-color: rgba(255, 255, 255, 0); /// žiadna resp. priehliadna
     border-radius: $border-radius;
     -webkit-border-radius: $border-radius;
     -moz-border-radius: $border-radius;
@@ -29,7 +29,7 @@
     -o-transition: 0.5s;
     transition: 0.5s;
     color: $btn-color-primary;
-    @include gradient-button(#314755, #26a0da)
+    @include gradient-button(#314755, #26a0da);
 }
 
 .primary-btn:focus,
@@ -60,6 +60,6 @@
 .submit-btn {
     max-width: 8.375em;
     p {
-            padding: 0.9rem;
-        }
+        padding: 0.9rem;
+    }
 }
