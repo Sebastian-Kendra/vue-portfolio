@@ -74,17 +74,6 @@
 import FooterView from '@/components/FooterView.vue'
 
 export default {
-  methods: {
-    toCwc() {
-      window.location.href = 'https://cwconstructionltd.com/'
-    },
-    toTunes() {
-      window.location.href = window.location.origin + '/tunes'
-    },
-    toList() {
-      window.location.href = window.location.origin + '/list'
-    },
-  },
   components: { FooterView },
 }
 </script>
