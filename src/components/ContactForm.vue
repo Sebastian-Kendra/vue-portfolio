@@ -34,7 +34,12 @@
         cols="40"
         rows="10"
       ></textarea>
-      <input type="submit" class="btn second-btn submit-btn" value="ODOSLAŤ" />
+      <input
+        type="submit"
+        class="btn second-btn submit-btn"
+        value="ODOSLAŤ"
+        ref="subInput"
+      />
     </form>
   </div>
 </template>
@@ -52,7 +57,10 @@ export default {
     const formName = ref()
     const message = ref()
     const email = ref()
+    const subInput = ref()
     const submitHandle = () => {
+      subInput.value.value = 'Posiela sa'
+
       emailjs
         .send(
           'service_50hiprx',
@@ -68,6 +76,8 @@ export default {
           (result) => {
             alert('Sprava úspešne odoslaná')
             console.log('SUCCESS!', result)
+            subInput.value.value = 'Odoslať opäť'
+            subInput.value.blur()
           },
           (error) => {
             console.log('FAILED...', error.text)
@@ -80,6 +90,7 @@ export default {
       formName,
       message,
       email,
+      subInput,
       submitHandle,
     }
   },
