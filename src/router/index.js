@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
 import ProjectView from '../views/ProjectView.vue'
-import ListView from '../views/list/views/ListView.vue'
-import TunesView from '../views/hudba/views/TunesView.vue'
+import ListView from '../views/ListView.vue'
+import TunesView from '../views/TunesView.vue'
 
 const routes = [
   {
