@@ -66,7 +66,6 @@
       </article>
     </div>
     <footer-view />
-    <!--   </div> -->
   </div>
 </template>
 
