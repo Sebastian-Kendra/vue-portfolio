@@ -9,8 +9,9 @@
         class="footer-logo"
       />
       <p class="footer-links">
-        <a href="/">O mne</a> · <a href="/projects">Projeky</a> ·
-        <a href="/contact">Kontakt</a>
+        <router-link to="/">O mne</router-link> ·
+        <router-link to="/projects">Projeky</router-link> ·
+        <router-link to="/contact">Kontakt</router-link>
       </p>
       <p class="footer-company-name footer-shadow">
         Bratislava ©

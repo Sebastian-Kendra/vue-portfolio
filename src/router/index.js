@@ -17,17 +17,17 @@ const routes = [
     component: ContactView,
   },
   {
-    path: '/projects/',
+    path: '/projects',
     name: 'projects',
     component: ProjectView,
   },
   {
-    path: '/projects/list',
+    path: '/projects-list',
     name: 'list',
     component: ListView,
   },
   {
-    path: '/projects/tunes',
+    path: '/projects-tunes',
     name: 'tunes',
     component: TunesView,
   },

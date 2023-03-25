@@ -367,7 +367,7 @@ export default {
 
     setTimeout(() => {
       state.isActive = true
-    }, '200')
+    }, '0')
 
     return {
       ...toRefs(state),
