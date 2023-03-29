@@ -47,7 +47,7 @@
         <a href="https://www.linkedin.com/in/sebastian-kendra-b91b36140/"
           ><i class="fa fa-linkedin" aria-hidden="true"></i
         ></a>
-        <a href="https://github.com/Sebastian-Kendra/Sebastian-Kendra/tree/main"
+        <a href="https://github.com/Sebastian-Kendra"
           ><i class="fa fa-github" aria-hidden="true"></i
         ></a>
       </div>
