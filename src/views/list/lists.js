@@ -4,19 +4,19 @@
  **/
 
 export const addNewList = (name, lists) => {
-  if (!name) return
+    if (!name) return
 
-  let listMaxId = lists.length ? Math.max(...lists.map((list) => list.id)) : 0
-  let listMaxList = lists.length
-    ? Math.max(...lists.map((list) => list.list))
-    : 0
+    let listMaxId = lists.length ? Math.max(...lists.map((list) => list.id)) : 0
+    let listMaxList = lists.length
+        ? Math.max(...lists.map((list) => list.list))
+        : 0
 
-  lists.push({
-    id: listMaxId + 1,
-    list: listMaxList + 1,
-    name: name,
-    cards: [],
-  })
+    lists.push({
+        id: listMaxId + 1,
+        list: listMaxList + 1,
+        name: name,
+        cards: [],
+    })
 }
 
 /**
@@ -24,8 +24,8 @@ export const addNewList = (name, lists) => {
  * @param {array} lists
  **/
 export const editListName = (data, lists) => {
-  if (!data?.id || !data?.newName) return
+    if (!data?.id || !data?.newName) return
 
-  let listToEdit = lists.find((list) => list.id === data.id)
-  listToEdit.name = data.newName
+    let listToEdit = lists.find((list) => list.id === data.id)
+    listToEdit.name = data.newName
 }

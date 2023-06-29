@@ -6,36 +6,36 @@ import ListView from '../views/ListView.vue'
 import TunesView from '../views/TunesView.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView,
-  },
-  {
-    path: '/contact',
-    name: 'contact',
-    component: ContactView,
-  },
-  {
-    path: '/projects',
-    name: 'projects',
-    component: ProjectView,
-  },
-  {
-    path: '/projects-list',
-    name: 'list',
-    component: ListView,
-  },
-  {
-    path: '/projects-tunes',
-    name: 'tunes',
-    component: TunesView,
-  },
+    {
+        path: '/',
+        name: 'home',
+        component: HomeView,
+    },
+    {
+        path: '/contact',
+        name: 'contact',
+        component: ContactView,
+    },
+    {
+        path: '/projects',
+        name: 'projects',
+        component: ProjectView,
+    },
+    {
+        path: '/projects-list',
+        name: 'list',
+        component: ListView,
+    },
+    {
+        path: '/projects-tunes',
+        name: 'tunes',
+        component: TunesView,
+    },
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
+    history: createWebHistory(process.env.BASE_URL),
+    routes,
 })
 
 export default router
