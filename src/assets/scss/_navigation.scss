@@ -96,3 +96,21 @@
         }
     }
 }
+
+.navigation-dark {
+    background-color: $dark-bg-header;
+
+    .navigation {
+        a {
+            color: $dark-page-color;
+
+            &.router-link-exact-active {
+                color: $dark-hover-nav-color;
+            }
+
+            span::before {
+                background: $dark-hover-nav-color;
+            }
+        }
+    }
+}

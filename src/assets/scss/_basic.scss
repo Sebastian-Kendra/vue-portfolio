@@ -23,7 +23,7 @@ html {
 
 ::-webkit-scrollbar-track {
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -88,8 +88,12 @@ aside {
     margin-top: 0;
 }
 
+.dark-theme {
+    background: $dark-bg-color-page;
+    color: $dark-page-color;
+}
+
 .container {
-    padding: 0 1.25rem;
     max-width: 1270px;
     margin: 0 auto;
 }

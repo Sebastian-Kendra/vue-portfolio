@@ -61,17 +61,26 @@
 </template>
 
 <script>
-import { reactive, toRefs } from 'vue'
-
 export default {
-    setup() {
-        const state = reactive({
+    data() {
+        return {
             year: new Date().getFullYear(),
+            isDark: false,
+        }
+    },
+    mounted() {
+        window.eventBus.on('change-theme', () => {
+            this.isDark = !this.isDark
         })
 
-        return {
-            ...toRefs(state),
+        if (!this.isDark) {
+            console.log(this.isDark)
         }
+    },
+    computed: {
+        themeDark() {
+            return this.isDark ? 'footer-dark' : ''
+        },
     },
 }
 </script>

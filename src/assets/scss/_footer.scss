@@ -1,4 +1,5 @@
 .footer-view {
+    width: 100%;
     margin-top: 2em;
     font-family: $page-font;
     color: $page-color;
@@ -97,5 +98,28 @@
         opacity: 1;
         animation: fadeIn;
         animation-duration: 2s;
+    }
+}
+
+.footer-dark {
+    color: $dark-page-color;
+    background-color: $dark-bg-color-page;
+
+    a {
+        color: $dark-bg-color-icon;
+    }
+
+    .footer-center i {
+        background-color: $dark-bg-color-icon;
+        color: $dark-bg-color-page;
+    }
+
+    .footer-icons i {
+        background-color: $dark-bg-color-icon;
+        color: $dark-bg-color-page;
+    }
+
+    .footer-shadow {
+        color: $dark-bg-color-icon;
     }
 }

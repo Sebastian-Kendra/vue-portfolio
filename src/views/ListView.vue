@@ -80,8 +80,6 @@ export default {
                 tags: movingTags || [],
                 image: movingImage,
             })
-
-            console.log(listForDrop.cards)
         }
 
         onMounted(() => {
