@@ -57,32 +57,3 @@
         }
     }
 }
-
-.home-dark {
-    a {
-        color: $dark-bg-color-icon;
-    }
-
-    .second-btn,
-    h1,
-    h2 {
-        color: $dark-bg-color-icon;
-    }
-
-    .hero {
-        .wrapper-btn {
-            .contact-btn-link {
-                color: $dark-bg-color-page;
-            }
-        }
-    }
-
-    .about-me {
-        .line {
-            width: 100%;
-            height: 1px;
-            box-shadow: rgba(216, 216, 216, 0.15) 1.95px 1.95px 2.6px;
-            background-color: lighten($bg-color-icon, 40);
-        }
-    }
-}

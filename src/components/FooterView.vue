@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer-view">
+    <footer :class="themeDark" class="footer-view">
         <div class="footer-left">
             <img
                 src="img/logo.svg"
@@ -65,22 +65,7 @@ export default {
     data() {
         return {
             year: new Date().getFullYear(),
-            isDark: false,
         }
-    },
-    mounted() {
-        window.eventBus.on('change-theme', () => {
-            this.isDark = !this.isDark
-        })
-
-        if (!this.isDark) {
-            console.log(this.isDark)
-        }
-    },
-    computed: {
-        themeDark() {
-            return this.isDark ? 'footer-dark' : ''
-        },
     },
 }
 </script>

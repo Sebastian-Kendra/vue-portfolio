@@ -3,52 +3,6 @@
     overflow: hidden;
     z-index: 1000;
 
-    .theme-container {
-        position: absolute;
-        top: 0.75em;
-        right: 1.5em;
-        margin-left: 0.75rem;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.5s;
-        cursor: pointer;
-    }
-
-    .theme-container:hover {
-        opacity: 0.8;
-    }
-
-    .shadow-dark {
-        background: linear-gradient(145deg, #23282c, #1e2125);
-        box-shadow: 17px 17px 23px #1a1d20, -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
-            inset -5px -5px 4px #24282c;
-    }
-
-    .shadow-light {
-        box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff, inset 7px 7px 3px rgba(177, 188, 207, 0.35),
-            inset -18px -18px 3px rgba(255, 255, 255, 0.3);
-    }
-
-    @keyframes change {
-        0% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(1.4);
-        }
-    }
-
-    .change {
-        animation-name: change;
-        animation-duration: 1s;
-        animation-direction: alternate;
-    }
-
     .navigation {
         font-size: $link-font-size;
         margin: 1em auto 1.5em;
@@ -92,24 +46,6 @@
 
             span:hover::before {
                 width: 100%;
-            }
-        }
-    }
-}
-
-.navigation-dark {
-    background-color: $dark-bg-header;
-
-    .navigation {
-        a {
-            color: $dark-page-color;
-
-            &.router-link-exact-active {
-                color: $dark-hover-nav-color;
-            }
-
-            span::before {
-                background: $dark-hover-nav-color;
             }
         }
     }

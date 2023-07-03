@@ -1,5 +1,5 @@
 <template>
-    <div :class="homeDark" class="home-view container">
+    <div class="home-view container">
         <div class="flex-reverse">
             <HomeHero />
             <LogoSvg />
@@ -23,21 +23,6 @@ import HomeHero from '../components/HomeHero.vue'
 
 export default {
     name: 'HomeView',
-    data() {
-        return {
-            isDark: false,
-        }
-    },
-    mounted() {
-        window.eventBus.on('change-theme', () => {
-            this.isDark = !this.isDark
-        })
-    },
-    computed: {
-        homeDark() {
-            return this.isDark ? 'home-dark' : ''
-        },
-    },
     components: { FooterView, LogoSvg, HomeHero },
 }
 </script>

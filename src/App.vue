@@ -1,5 +1,5 @@
 <template>
-    <div id="app-container" :class="dark">
+    <div id="app-container">
         <TheNavigation class="fade-in" />
         <div class="cursor"></div>
         <main>
@@ -16,23 +16,15 @@ export default {
         TheNavigation,
     },
     data() {
-        return {
-            isDark: false,
-        }
+        return {}
     },
     computed: {
         mobile() {
             return this.detectMob()
         },
-        dark() {
-            return this.isDark ? 'dark-theme' : ''
-        },
     },
     mounted() {
         setTimeout(this.cursor(), 200)
-        window.eventBus.on('change-theme', () => {
-            this.isDark = !this.isDark
-        })
     },
     methods: {
         detectMob() {
