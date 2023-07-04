@@ -123,7 +123,7 @@ aside {
     left: 0;
     width: 42px;
     height: 42px;
-    transform: translate(calc(var(--x) - 42px / 2), calc(var(--y) - 42px / 2));
+    transform: translate(calc(var(--x) - 43.5px / 2), calc(var(--y) - 43.5px / 2));
     transition-duration: 0.1s;
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.42, 1);
     z-index: 10000;
