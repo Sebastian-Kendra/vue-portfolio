@@ -6,7 +6,6 @@
 
 html {
     font-size: 105%;
-    cursor: url(../img/circle-dot-solid.svg) 4.5 4.5, auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -113,35 +112,5 @@ aside {
 
     .img-back-to {
         width: 25px;
-    }
-}
-
-.cursor {
-    display: hide;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 42px;
-    height: 42px;
-    transform: translate(calc(var(--x) - 43.5px / 2), calc(var(--y) - 43.5px / 2));
-    transition-duration: 0.1s;
-    transition-timing-function: cubic-bezier(0.25, 0.25, 0.42, 1);
-    z-index: 10000;
-    pointer-events: none;
-
-    @media (pointer: fine) {
-        display: block;
-    }
-
-    &::after {
-        display: var(--display, none);
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 100px;
-        border: 2px solid rgba(8, 14, 37, 0.293);
     }
 }

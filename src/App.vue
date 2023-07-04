@@ -1,7 +1,14 @@
 <template>
     <div id="app-container">
         <TheNavigation class="fade-in" />
-        <div class="cursor"></div>
+        <div
+            class="flex-item theme-container shadow-light"
+            @click="changeTheme"
+        >
+            <div id="theme-icon">
+                <i :class="icon" class="fas fa-lg"></i>
+            </div>
+        </div>
         <main>
             <router-view />
         </main>
@@ -16,69 +23,16 @@ export default {
         TheNavigation,
     },
     data() {
-        return {}
+        return { isDark: false }
     },
     computed: {
-        mobile() {
-            return this.detectMob()
+        icon() {
+            return this.isDark ? 'fa-moon' : 'fa-sun'
         },
-    },
-    mounted() {
-        setTimeout(this.cursor(), 200)
     },
     methods: {
-        detectMob() {
-            const toMatch = [
-                /Android/i,
-                /webOS/i,
-                /iPhone/i,
-                /iPad/i,
-                /iPod/i,
-                /BlackBerry/i,
-                /Windows Phone/i,
-            ]
-
-            return toMatch.some((toMatchItem) => {
-                return navigator.userAgent.match(toMatchItem)
-            })
-        },
-        cursor() {
-            const updateProperties = (elem, state) => {
-                elem.style.setProperty('--x', `${state.x}px`)
-                elem.style.setProperty('--y', `${state.y}px`)
-            }
-
-            document.querySelectorAll('.cursor').forEach((cursor) => {
-                const createState = (e) => {
-                    const defaultState = {
-                        x: e.clientX,
-                        y: e.clientY,
-                    }
-
-                    if (this.mobile === true) {
-                        cursor.style.setProperty('--display', 'none')
-                    } else {
-                        cursor.style.setProperty('--display', 'block')
-                    }
-
-                    return {
-                        ...defaultState,
-                    }
-                }
-
-                document.addEventListener('mousemove', (e) => {
-                    const state = createState(e)
-                    updateProperties(cursor, state)
-                })
-
-                document.addEventListener('mouseleave', () => {
-                    cursor.style.setProperty('--display', 'none')
-                })
-
-                document.addEventListener('mouseenter', () => {
-                    cursor.style.setProperty('--display', 'block')
-                })
-            })
+        changeTheme() {
+            this.isDark = !this.isDark
         },
     },
 }
