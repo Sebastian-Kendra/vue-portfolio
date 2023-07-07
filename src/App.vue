@@ -1,4 +1,4 @@
-<template>
+<template class="čotoje">
     <div id="app-container" :class="darkTheme">
         <TheNavigation class="fade-in" />
         <div class="dark-container" @click="changeTheme">
@@ -148,7 +148,7 @@ import TheNavigation from './components/TheNavigation.vue'
 export default {
     data() {
         return {
-            isDark: false,
+            isDark: true,
         }
     },
     computed: {

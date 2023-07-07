@@ -69,6 +69,10 @@
         line-height: 2.1875em;
     }
 
+    .footer-icons i:hover, .footer-icons i:focus {
+        background-color: lighten($bg-color-icon, 15);
+    }
+
     footer a {
         color: $bg-color-icon;
         width: 100%;
