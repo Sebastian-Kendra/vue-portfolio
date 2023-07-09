@@ -1,5 +1,5 @@
 <template>
-    <footer :class="themeDark" class="footer-view">
+    <footer class="footer-view">
         <div class="footer-left">
             <img
                 src="img/logo.svg"

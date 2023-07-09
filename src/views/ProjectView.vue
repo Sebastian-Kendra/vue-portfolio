@@ -39,7 +39,7 @@
                     <p>
                         Hudobná aplikácia bola písaná v javascripte, tvorená vo
                         Vue 3 použité bolo optional API. Aplikácia dokáže
-                        prehľadávať v externom API vytiahnuť dáta a zobratiť v
+                        prehľadávať v externom API vytiahnuť dáta a zobraziť v
                         podobe komponentu.
                     </p>
                 </div>

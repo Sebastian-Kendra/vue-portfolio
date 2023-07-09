@@ -6,7 +6,6 @@
 
 html {
     font-size: 105%;
-    cursor: url(../img/circle-dot-solid.svg) 4.5 4.5, auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -41,6 +40,114 @@ body {
     width: 100%;
     position: relative;
 }
+
+.tunes {
+    min-height: 100vh;
+
+    .circle-svg {
+        width: 12.5em;
+        margin-bottom: 2.5em;
+        fill: $page-color;
+        cursor: pointer;
+    }
+
+    .circle-svg:hover,
+    .circle-svg:focus {
+        fill: lighten($page-color, 5%);
+    }
+
+}
+
+
+
+/* DARK CHECKBOX */ 
+.dark-container {
+    position: relative;
+    display: block;
+    height: 0;
+
+    label {
+            width: 5rem;
+            height: 2rem;
+            margin-right: 0.5rem;
+            position: absolute;
+            right: 1%;
+            bottom: 17px;
+            background: #ebebeb;
+            border-radius: 200px;
+            box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+                inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    
+        label:after {
+            content: '';
+            width: 1.5625rem;
+            height: 1.5625rem;
+            position: absolute;
+            top: 0.2188rem;
+            left: 0.4688rem;
+            background: linear-gradient(180deg, #dbdbdb, #818181);
+            border-radius: 11.25rem;
+            box-shadow: 0rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+    
+        input:checked+label {
+            background: #242424;
+        }
+    
+        input:checked+label:after {
+            left: 1.5625rem;
+            transform: translateX(100%);
+            background: linear-gradient(180deg, #777, #3a3a3a);
+        }
+    
+        label:active:after {
+            width: 1.5625rem;
+        }
+    
+        input:checked+label {
+            background: #242424;
+        }
+    
+        label svg {
+            position: absolute;
+            width: 1.15rem;
+            top: 0.4375rem;
+            z-index: 100;
+        }
+    
+        label svg.sun {
+            left: 13.5%;
+            top: 19%;
+            fill: #ffffff;
+            transition: 0.3s;
+        }
+    
+        label svg.moon {
+            left: 3.375rem;
+            fill: #7e7e7e;
+            transition: 0.3s;
+        }
+    
+        input:checked+label svg.sun {
+            fill: #7e7e7e;
+        }
+    
+        input:checked+label svg.moon {
+            fill: #fff;
+        }
+    
+        input {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+}
+
+
 
 h1 {
     font-size: 2.7em;
@@ -100,6 +207,7 @@ aside {
 }
 
 .back-to {
+    cursor: pointer;
     display: flex;
     align-items: center;
     padding: {
@@ -111,37 +219,7 @@ aside {
     text-align: left;
     color: $bg-color-icon;
 
-    .img-back-to {
-        width: 25px;
-    }
-}
-
-.cursor {
-    display: hide;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 42px;
-    height: 42px;
-    transform: translate(calc(var(--x) - 42px / 2), calc(var(--y) - 42px / 2));
-    transition-duration: 0.1s;
-    transition-timing-function: cubic-bezier(0.25, 0.25, 0.42, 1);
-    z-index: 10000;
-    pointer-events: none;
-
-    @media (pointer: fine) {
-        display: block;
-    }
-
-    &::after {
-        display: var(--display, none);
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 100px;
-        border: 2px solid rgba(8, 14, 37, 0.293);
+    svg {
+        width: 1.5625rem;
     }
 }
