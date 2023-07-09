@@ -11,33 +11,5 @@
                 <span> Kontakt </span>
             </router-link>
         </div>
-        <div
-            class="flex-item theme-container shadow-light"
-            @click="changeTheme"
-        >
-            <div id="theme-icon">
-                <i :class="icon" class="fas fa-lg"></i>
-            </div>
-        </div>
     </header>
 </template>
-
-<script>
-export default {
-    data() {
-        return {
-            isDark: false,
-        }
-    },
-    computed: {
-        icon() {
-            return this.isDark ? 'fa-moon' : 'fa-sun'
-        },
-    },
-    methods: {
-        changeTheme() {
-            this.isDark = !this.isDark
-        },
-    },
-}
-</script>
