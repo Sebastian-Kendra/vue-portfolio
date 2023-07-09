@@ -156,11 +156,6 @@ export default {
             return this.isDark ? 'theme-dark' : ''
         },
     },
-    methods: {
-        changeTheme() {
-            console.log('menim', this.isDark)
-        },
-    },
     components: {
         TheNavigation,
     },
