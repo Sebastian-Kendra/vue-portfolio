@@ -532,9 +532,15 @@ Add the correct display in Chrome and Safari.
 	 * LISTS
 	 */
 
+    .grabbing {
+        cursor: grabbing !important;
+        opacity: 100% !important;
+    }
+
     .card:hover {
         --bg-opacity: 1;
         background-color: rgba(244, 244, 245, var(--bg-opacity));
+        cursor: grab;
     }
 
     .list {

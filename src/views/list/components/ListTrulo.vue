@@ -53,6 +53,7 @@ export default {
     setup(props, { emit }) {
         const state = reactive({
             isEditing: false,
+            isGrabbing: false,
         })
 
         const headline = ref(null)
@@ -133,9 +134,7 @@ export default {
     transform: scale(0.75);
 }
 
-.drag-el.dragging {
-    background-color: navy;
-    border-radius: 50%;
-    opacity: 1;
+.drag-el .grabbing {
+    color: royalblue;
 }
 </style>

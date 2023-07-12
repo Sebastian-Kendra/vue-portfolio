@@ -1,7 +1,9 @@
 <template>
     <li
-        :class="{ 'z-20': isPopped }"
+        :class="{ 'z-20': isPopped, grabbing: isGrabbing }"
         class="card relative"
+        @mousedown="startGrabbing"
+        @mouseup="stopGrabbing"
         @mouseenter="visible = true"
         @mouseleave="visible = false"
     >
@@ -11,6 +13,7 @@
                 class="rounded-full bg-opacity-70 absolute top-0 right-5"
                 @click.prevent="doPop"
             >
+                <!-- pencil ico -->
                 <svg
                     class="pencil"
                     xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +73,7 @@ export default {
             isPopped: false,
             isEditing: false,
             visible: false,
+            isGrabbing: false,
         })
 
         const doPop = () => {
@@ -125,6 +129,14 @@ export default {
             }
         }
 
+        const startGrabbing = () => {
+            state.isGrabbing = true
+        }
+
+        const stopGrabbing = () => {
+            state.isGrabbing = false
+        }
+
         return {
             ...toRefs(state),
             doPop,
@@ -133,6 +145,8 @@ export default {
             startEditing,
             selectCell,
             cardText,
+            startGrabbing,
+            stopGrabbing,
         }
     },
     components: { CardTags, CardImage, CardLabels, CardPopup },

@@ -4,8 +4,8 @@
             <ContactForm class="fade-in-left" />
             <MapView class="fade-in-right" />
         </div>
-        <FooterView />
     </div>
+    <FooterView />
 </template>
 
 <script>

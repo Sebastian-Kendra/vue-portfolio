@@ -12,8 +12,8 @@
                 sa vo voľnom čase venujem a učím front-end.
             </p>
         </div>
-        <FooterView />
     </div>
+    <FooterView />
 </template>
 
 <script>

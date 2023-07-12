@@ -66,8 +66,8 @@
                 </div>
             </article>
         </div>
-        <footer-view />
     </div>
+    <footer-view />
 </template>
 
 <script>
