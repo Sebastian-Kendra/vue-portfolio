@@ -1,4 +1,5 @@
 <template>
+    <BackGround />
     <div class="home-view container">
         <div class="flex-reverse">
             <HomeHero />
@@ -20,9 +21,10 @@
 import LogoSvg from '@/components/LogoSvg.vue'
 import FooterView from '@/components/FooterView.vue'
 import HomeHero from '../components/HomeHero.vue'
+import BackGround from '@/components/BackGround.vue'
 
 export default {
     name: 'HomeView',
-    components: { FooterView, LogoSvg, HomeHero },
+    components: { FooterView, LogoSvg, BackGround, HomeHero },
 }
 </script>

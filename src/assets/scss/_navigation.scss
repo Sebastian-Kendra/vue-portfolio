@@ -2,6 +2,8 @@
     background-color: $bg-header;
     overflow: hidden;
     z-index: 1000;
+    position: relative;
+    z-index: 2;
 
     .navigation {
         font-size: $link-font-size;

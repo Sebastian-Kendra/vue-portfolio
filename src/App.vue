@@ -1,4 +1,4 @@
-<template class="čotoje">
+<template>
     <div id="app-container" :class="darkTheme">
         <TheNavigation class="fade-in" />
         <div class="dark-container" @click="changeTheme">

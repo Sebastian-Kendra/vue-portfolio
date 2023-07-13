@@ -3,7 +3,10 @@
 .theme-dark {
     background: $dark-bg-color-page;
 
-    
+    .dot {
+        box-shadow: rgba(181, 208, 219, 0.56) 0px 22px 70px 4px;
+        background-color: #6a808c;
+    }
 
     .project-view .project h2 {
         color: $dark-page-color-sec;

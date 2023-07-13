@@ -3,6 +3,8 @@
 // ------            ------ //
 .home-view {
     display: block;
+    position: relative;
+    z-index: 2;
 
     .flex-reverse {
         margin: 1.5em 0 2em 0;
