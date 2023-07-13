@@ -10,9 +10,17 @@
     flex-wrap: wrap;
     align-items: center;
 
+    div {
+        position: relative;
+        z-index: 2;
+    }
+    
+
     .logo-svg {
         width: 6.6875em;
         margin: 0.75rem;
+        position: relative;
+        z-index: 2;
     }
 
     .footer-left {

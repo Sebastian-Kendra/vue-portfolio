@@ -10,8 +10,8 @@
                 width: dot.size + 'px',
                 height: dot.size + 'px',
                 transform: `translateX(${
-                    dot.moving ? this.mouseX * 0.01 : 0
-                }px) translateY(${dot.moving ? this.mouseY * 0.01 : 0}px)`,
+                    dot.moving ? this.mouseX * 0.02 : 0
+                }px) translateY(${dot.moving ? this.mouseY * 0.02 : 0}px)`,
             }"
         ></div>
     </div>
