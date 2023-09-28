@@ -32,7 +32,8 @@
         fill: $dark-border-color;
     }
 
-    .circle-svg:hover, .circle-svg:focus {
+    .circle-svg:hover,
+    .circle-svg:focus {
         fill: darken($dark-border-color, 5%);
     }
 
@@ -71,7 +72,7 @@
         }
     }
 
-    .contact-container { 
+    .contact-container {
         form {
             color: $dark-page-color;
         }
@@ -79,8 +80,12 @@
         .contact input,
         .contact textarea {
             color: $dark-page-color;
-            background-color: darken($dark-bg-color-page, 4) ;
+            background-color: darken($dark-bg-color-page, 4);
             border: 2px solid $dark-bg-header;
+
+            &:focus {
+                border-color: $hover-nav-color;
+            }
         }
 
         .second-btn:hover,
