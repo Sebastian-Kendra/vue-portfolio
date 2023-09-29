@@ -67,7 +67,7 @@ export default {
                 const distance = Math.sqrt(
                     (mouseX - dot.x) ** 2 + (mouseY - dot.y) ** 2
                 )
-                dot.scale = 1 + distance / 30 // Zmena veľkosti na základe vzdialenosti
+                dot.scale = 1 + distance / 50 // Zmena veľkosti na základe vzdialenosti
             })
         },
     },
