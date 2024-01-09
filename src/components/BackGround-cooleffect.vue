@@ -1,5 +1,5 @@
 <template>
-    <div id="background">
+    <div class="background" :class="{ fade: mouseEnter }">
         <div
             v-for="(dot, index) in dots"
             :key="index"
@@ -23,6 +23,7 @@ export default {
             dots: [],
             mouseX: 0,
             mouseY: 0,
+            mouseEnter: false,
         }
     },
     mounted() {
@@ -34,7 +35,7 @@ export default {
     methods: {
         generateDots() {
             // Generovanie bodiek s náhodnou pozíciou
-            const numDots = 15 // Počet bodiek
+            const numDots = 9 // Počet bodiek
             const minSize = 3 // Minimálna veľkosť bodiek v pixeloch
             const maxSize = 10 // Maximálna veľkosť bodiek v pixeloch
             const containerWidth = window.innerWidth // Šírka kontajnera

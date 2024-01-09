@@ -1,5 +1,10 @@
+<!-- Aktualne použivane -->
 <template>
-    <div id="background">
+    <div
+        class="background"
+        :class="{ fade: mouseEnter }"
+        @mouseover="mouseEnter = true"
+    >
         <div
             v-for="(dot, index) in dots"
             :key="index"
@@ -23,6 +28,7 @@ export default {
             dots: [],
             mouseX: 0,
             mouseY: 0,
+            mouseEnter: false,
         }
     },
     mounted() {
