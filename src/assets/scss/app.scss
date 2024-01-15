@@ -36,3 +36,14 @@
 
 // ------ DARK ------ //
 @import "dark.scss";
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.svg-loader {
+    margin-bottom: 10em;
+}

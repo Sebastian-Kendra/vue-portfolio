@@ -3,6 +3,10 @@
 .theme-dark {
     background: $dark-bg-color-page;
 
+    .loader {
+        color: aliceblue;
+    }
+
     .dot {
         box-shadow: rgb(50, 65, 72) 0px 5px 15px;
         background-color: #51636d9e;

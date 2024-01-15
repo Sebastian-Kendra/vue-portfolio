@@ -68,6 +68,8 @@ export default {
         const onDrop = (evt, listId) => {
             window.eventBus.emit('card-dropt', listId)
 
+            console.log(evt)
+
             let listForDrop = lists.value.find((list) => list.id === listId)
             let cardMaxId = listForDrop.cards.length
                 ? Math.max(...listForDrop.cards.map((card) => card.id))
